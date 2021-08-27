@@ -3,9 +3,6 @@ L0001   = $0001
 L0002   = $0002
 L0003   = $0003
 L0006   = $0006
-L0007   = $0007
-L000B   = $000B
-L000D   = $000D
 L000E   = $000E
 L000F   = $000F
 L0012   = $0012
@@ -15,37 +12,27 @@ L0015   = $0015
 L0016   = $0016
 L0020   = $0020
 L0026   = $0026
-L0027   = $0027
 L0029   = $0029
 L002B   = $002B
-L002D   = $002D
 L0030   = $0030
 L0032   = $0032
-L0036   = $0036
 L0038   = $0038
 L003B   = $003B
 L003E   = $003E
 L0042   = $0042
 L0043   = $0043
-L004E   = $004E
 L004F   = $004F
-L0050   = $0050
 L0051   = $0051
 L0053   = $0053
 L0054   = $0054
 L0055   = $0055
 L0056   = $0056
-L005E   = $005E
 L0061   = $0061
 L0063   = $0063
 L0064   = $0064
 L0065   = $0065
 L0066   = $0066
-L0068   = $0068
 L0069   = $0069
-L006A   = $006A
-L006B   = $006B
-L006C   = $006C
 L006D   = $006D
 L006E   = $006E
 L0070   = $0070
@@ -55,16 +42,8 @@ L0074   = $0074
 L0075   = $0075
 L0077   = $0077
 L0078   = $0078
-L0080   = $0080
 L0081   = $0081
-L0086   = $0086
-L008B   = $008B
-L008E   = $008E
 L008F   = $008F
-L0091   = $0091
-L0092   = $0092
-L0095   = $0095
-L0096   = $0096
 L0098   = $0098
 L0099   = $0099
 L009A   = $009A
@@ -108,22 +87,14 @@ L00BF   = $00BF
 L00C0   = $00C0
 L00C1   = $00C1
 L00C2   = $00C2
-L00C3   = $00C3
 L00C4   = $00C4
 L00C7   = $00C7
 L00C8   = $00C8
-L00CA   = $00CA
 L00CC   = $00CC
 L00CD   = $00CD
 L00CF   = $00CF
 L00D0   = $00D0
-L00D1   = $00D1
 L00D7   = $00D7
-L00DC   = $00DC
-L00E2   = $00E2
-L00E4   = $00E4
-L00E5   = $00E5
-L00ED   = $00ED
 L00EF   = $00EF
 L00F0   = $00F0
 L00F1   = $00F1
@@ -132,9 +103,7 @@ L00F3   = $00F3
 L00F4   = $00F4
 L00F6   = $00F6
 L00F7   = $00F7
-L00FC   = $00FC
 L00FD   = $00FD
-L00FE   = $00FE
 L00FF   = $00FF
 L0100   = $0100
 L0101   = $0101
@@ -142,8 +111,6 @@ L0102   = $0102
 L0103   = $0103
 L0104   = $0104
 L0106   = $0106
-L0128   = $0128
-L01FA   = $01FA
 L0202   = $0202
 L0203   = $0203
 L0212   = $0212
@@ -154,8 +121,6 @@ L0224   = $0224
 L026A   = $026A
 L028D   = $028D
 L02A0   = $02A0
-L0350   = $0350
-L0351   = $0351
 L0355   = $0355
 L0400   = $0400
 L0406   = $0406
@@ -166,19 +131,13 @@ L04C7   = $04C7
 L04CE   = $04CE
 L0500   = $0500
 L0518   = $0518
-L053A   = $053A
-L0582   = $0582
 L058D   = $058D
 L059C   = $059C
-L059E   = $059E
 L0600   = $0600
 L0630   = $0630
 L0695   = $0695
 L069E   = $069E
 L06A7   = $06A7
-L06BC   = $06BC
-L06C5   = $06C5
-L0700   = $0700
 L09AE   = $09AE
 L0A0E   = $0A0E
 L0AD0   = $0AD0
@@ -190,7 +149,6 @@ L0D0E   = $0D0E
 L0D11   = $0D11
 L0D14   = $0D14
 L0D1A   = $0D1A
-L0D1E   = $0D1E
 L0D20   = $0D20
 L0D21   = $0D21
 L0D22   = $0D22
@@ -202,7 +160,6 @@ L0D2E   = $0D2E
 L0D2F   = $0D2F
 L0D30   = $0D30
 L0D31   = $0D31
-L0D32   = $0D32
 L0D3A   = $0D3A
 L0D3E   = $0D3E
 L0D3F   = $0D3F
@@ -217,8 +174,6 @@ L0D62   = $0D62
 L0D63   = $0D63
 L0D64   = $0D64
 L0D65   = $0D65
-L0D66   = $0D66
-L0D67   = $0D67
 L0D68   = $0D68
 L0D69   = $0D69
 L0D6A   = $0D6A
@@ -231,7 +186,6 @@ L0D71   = $0D71
 L0DE6   = $0DE6
 L0DF0   = $0DF0
 L0DFE   = $0DFE
-L0DFF   = $0DFF
 L0E00   = $0E00
 L0E01   = $0E01
 L0E02   = $0E02
@@ -318,7 +272,6 @@ L10D8   = $10D8
 L10D9   = $10D9
 L10F3   = $10F3
 L12AC   = $12AC
-L13C0   = $13C0
 L2000   = $2000
 L2020   = $2020
 L2029   = $2029
@@ -333,7 +286,6 @@ L2079   = $2079
 L20EA   = $20EA
 L212E   = $212E
 L216F   = $216F
-L21FF   = $21FF
 L2322   = $2322
 L2800   = $2800
 L2820   = $2820
@@ -341,30 +293,19 @@ L2828   = $2828
 L2829   = $2829
 L2929   = $2929
 L293E   = $293E
-L2DFD   = $2DFD
 L2E34   = $2E34
 L2E45   = $2E45
 L3127   = $3127
-L3352   = $3352
-L35FF   = $35FF
 L3A20   = $3A20
 L3C00   = $3C00
 L3C28   = $3C28
 L3C29   = $3C29
-L42B8   = $42B8
-L4333   = $4333
-L4394   = $4394
 L4520   = $4520
 L464E   = $464E
 L4A0D   = $4A0D
-L4ADF   = $4ADF
 L4CEA   = $4CEA
 L4E2F   = $4E2F
 L4E41   = $4E41
-L508B   = $508B
-L50B8   = $50B8
-L52AF   = $52AF
-L57B7   = $57B7
 L6000   = $6000
 L60EA   = $60EA
 L616A   = $616A
@@ -373,34 +314,24 @@ L616F   = $616F
 L6170   = $6170
 L6269   = $6269
 L6320   = $6320
-L634C   = $634C
 L6369   = $6369
 L636F   = $636F
 L6441   = $6441
 L6465   = $6465
 L6469   = $6469
-L6544   = $6544
-L654C   = $654C
-L654E   = $654E
-L6552   = $6552
-L6562   = $6562
 L6563   = $6563
 L656D   = $656D
-L6570   = $6570
 L6573   = $6573
 L6660   = $6660
 L666F   = $666F
 L6854   = $6854
 L6863   = $6863
 L6874   = $6874
-L68EA   = $68EA
 L694C   = $694C
 L6957   = $6957
 L6966   = $6966
 L696C   = $696C
-L6977   = $6977
 L6C43   = $6C43
-L6C46   = $6C46
 L6C65   = $6C65
 L6D61   = $6D61
 L6D75   = $6D75
@@ -414,11 +345,9 @@ L6F52   = $6F52
 L6F62   = $6F62
 L6F66   = $6F66
 L704F   = $704F
-L706C   = $706C
 L706F   = $706F
 L7075   = $7075
 L71AD   = $71AD
-L7250   = $7250
 L7261   = $7261
 L7265   = $7265
 L726F   = $726F
@@ -434,26 +363,19 @@ L746F   = $746F
 L753C   = $753C
 L7544   = $7544
 L7562   = $7562
-L756E   = $756E
 L7573   = $7573
-L766F   = $766F
 L7765   = $7765
 L776F   = $776F
 L796C   = $796C
 L7974   = $7974
 L7C3E   = $7C3E
-L7C65   = $7C65
 L7DFD   = $7DFD
-LC470   = $C470
-LC7BD   = $C7BD
 LCFDE   = $CFDE
 LD020   = $D020
 LD0A9   = $D0A9
-LD290   = $D290
 LD9FD   = $D9FD
 LE320   = $E320
 LEA28   = $EA28
-LECEC   = $ECEC
 LF028   = $F028
 LFD21   = $FD21
 LFDD1   = $FDD1
@@ -474,18 +396,12 @@ LFEE2   = $FEE2
 LFEE3   = $FEE3
 LFEE5   = $FEE5
 LFEE6   = $FEE6
-LFEE7   = $FEE7
 LFF0D   = $FF0D
-LFF8E   = $FF8E
-LFFB0   = $FFB0
 LFFB9   = $FFB9
 LFFBD   = $FFBD
-LFFBF   = $FFBF
 LFFC2   = $FFC2
 LFFC5   = $FFC5
 LFFCE   = $FFCE
-LFFD1   = $FFD1
-LFFD4   = $FFD4
 LFFD7   = $FFD7
 LFFDA   = $FFDA
 LFFDD   = $FFDD
@@ -536,11 +452,9 @@ L8004 = L8003+1
         EQUB    $4E,$FE,$AC,$65,$0D,$98,$30,$0B
         EQUB    $A9,$FE,$20,$5A,$80,$4C,$85,$85
         EQUB    $6C,$20,$02,$C0,$86,$B0,$0B,$AD
-        EQUB    $68,$0D,$8D
-
-.L8065
-        EQUB    $69,$0D,$09,$1C,$8D,$68,$0D,$A9
-        EQUB    $85,$48,$B9,$BB,$84,$48,$60
+        EQUB    $68,$0D,$8D,$69,$0D,$09,$1C,$8D
+        EQUB    $68,$0D,$A9,$85,$48,$B9,$BB,$84
+        EQUB    $48,$60
 
 .L8074
         BIT     LFE18
@@ -555,11 +469,8 @@ L8076 = L8074+2
         STX     L0D63
         LDA     #$8F
         LDX     #$0C
-.L808B
         JSR     L8E85
 
-L808C = L808B+1
-.L808E
         LDY     #$05
         CPY     #$05
         BNE     L80BD
@@ -1225,64 +1136,22 @@ L808C = L808B+1
 .L8485
         JMP     L8236
 
-        DEX
-        LDA     L8F8F
-        CPX     L00E4
-        CLV
-        LDA     #$00
-        STA     L00A4
-        LDA     #$82
-        STA     L00A2
-        LDA     #$01
-        STA     L00A3
-        LDA     L009D
-        STA     L00A5
-        LDY     #$01
-.L84A2
-        LDA     L0D32,Y
-        STA     L0D66,Y
-        DEY
-        BPL     L84A2
+        EQUB    $CA
 
-        JMP     L81CC
-
-        LDA     #$2E
-        STA     L00A6
-        LDA     #$0D
-        STA     L00A7
-        JMP     L81BA
-
-        LDA     #$01
-        STA     L00A3
-        LDA     #$FC
-        STA     L00A2
-        LDA     #$CB
-        STA     L00A4
-        LDA     #$88
-        STA     L00A5
-        BNE     L84DD
-
-        LDA     #$2E
-        STA     L00A6
-        LDA     #$0D
-        STA     L00A7
-        LDA     #$02
-        STA     L0D40
-        JSR     L88F2
-
-        BCC     L852C
-
-.L84DD
-        LDA     L0D3E
-        ORA     #$80
-        STA     L0D3E
-        LDA     #$44
-        STA     LFEA0
-        LDA     #$A7
-        STA     LFEA1
-        LDA     #$0C
-        LDY     #$85
-        JMP     L8308
+        EQUB    $AD,$8F,$8F,$8F,$E4,$E4,$B8,$A9
+        EQUB    $00,$85,$A4,$A9,$82,$85,$A2,$A9
+        EQUB    $01,$85,$A3,$A5,$9D,$85,$A5,$A0
+        EQUB    $01,$B9,$32,$0D,$99,$66,$0D,$88
+        EQUB    $10,$F7,$4C,$CC,$81,$A9,$2E,$85
+        EQUB    $A6,$A9,$0D,$85,$A7,$4C,$BA,$81
+        EQUB    $A9,$01,$85,$A3,$A9,$FC,$85,$A2
+        EQUB    $A9,$CB,$85,$A4,$A9,$88,$85,$A5
+        EQUB    $D0,$12,$A9,$2E,$85,$A6,$A9,$0D
+        EQUB    $85,$A7,$A9,$02,$8D,$40,$0D,$20
+        EQUB    $F2,$88,$90,$4F,$AD,$3E,$0D,$09
+        EQUB    $80,$8D,$3E,$0D,$A9,$44,$8D,$A0
+        EQUB    $FE,$A9,$A7,$8D,$A1,$FE,$A9,$0C
+        EQUB    $A0,$85,$4C,$08,$83
 
 .L84F6
         LDA     L00A2
@@ -1309,7 +1178,6 @@ L808C = L808B+1
         ORA     #$08
         STA     LFE4B
         BIT     LFE4A
-.L852C
         JMP     L83F8
 
 .L852F
@@ -1326,50 +1194,18 @@ L808C = L808B+1
 .L853D
         RTS
 
-        EOR     L7C65,Y
-        LDA     #$85
-        PHA
-        LDA     #$84
-        PHA
-        JMP     (L0D66)
+        EQUB    $42
 
-        LDX     L0D66
-        LDA     L0D67
-        LDY     #$08
-        JSR     LFFBF
-
-        JMP     L8585
-
-        LDX     L0D66
-        LDY     L0D67
-        JSR     L8E43
-
-        JMP     L8585
-
-        LDA     #$04
-        BIT     L0D61
-        BNE     L8585
-
-        ORA     L0D61
-        STA     L0D61
-        LDA     #$04
-        CLI
-.L8576
-        BIT     L0D61
-        BNE     L8576
-
-        BEQ     L8585
-
-        LDA     L0D61
-        AND     #$FB
-        STA     L0D61
-.L8585
-        PLA
-        TAY
-        PLA
-        TAX
-        LDA     #$00
-        RTS
+        EQUB    $4B,$59,$65,$7C,$A9,$85,$48,$A9
+        EQUB    $84,$48,$6C,$66,$0D,$AE,$66,$0D
+        EQUB    $AD,$67,$0D,$A0,$08,$20,$BF,$FF
+        EQUB    $4C,$85,$85,$AE,$66,$0D,$AC,$67
+        EQUB    $0D,$20,$43,$8E,$4C,$85,$85,$A9
+        EQUB    $04,$2C,$61,$0D,$D0,$18,$0D,$61
+        EQUB    $0D,$8D,$61,$0D,$A9,$04,$58,$2C
+        EQUB    $61,$0D,$D0,$FB,$F0,$08,$AD,$61
+        EQUB    $0D,$29,$FB,$8D,$61,$0D,$68,$A8
+        EQUB    $68,$AA,$A9,$00,$60
 
 .L858C
         TXA
@@ -1524,40 +1360,20 @@ L8600 = L85FF+1
         STA     L0D3E
         LDA     L8861,Y
         STA     L0D3F
-.L8679
         LDA     #$86
-L867A = L8679+1
         PHA
         LDA     L8600,Y
         PHA
         RTS
 
-        STY     LD290
-        DEY
-        LDA     #$03
-        BNE     L86D5
+        EQUB    $8C
 
-        LDA     #$03
-        BNE     L8693
-
-        LDA     #$02
-.L8693
-        STA     L0D40
-        CLC
-        PHP
-        LDY     #$0C
-.L869A
-        LDA     L0D1E,Y
-        PLP
-        ADC     (L00A0),Y
-        STA     L0D1E,Y
-        INY
-        PHP
-        CPY     #$10
-        BCC     L869A
-
-        PLP
-        BNE     L86D8
+        EQUB    $90,$D2,$D2,$D2,$E2,$E2,$88,$A9
+        EQUB    $03,$D0,$48,$A9,$03,$D0,$02,$A9
+        EQUB    $02,$8D,$40,$0D,$18,$08,$A0,$0C
+        EQUB    $B9,$1E,$0D,$28,$71,$A0,$99,$1E
+        EQUB    $0D,$C8,$08,$C0,$10,$90,$F1,$28
+        EQUB    $D0,$2C
 
 .L86AC
         LDA     L0D20
@@ -1583,9 +1399,7 @@ L867A = L8679+1
         LDA     #$00
         STA     L0D3E
         LDA     #$02
-.L86D5
         STA     L0D40
-.L86D8
         LDA     L00A0
         STA     L00A6
         LDA     L00A1
@@ -2067,30 +1881,24 @@ L89A6 = L89A4+2
 
         ORA     (L0000,X)
         CLC
-        LDY     L00B7
-        CMP     #$4D
-        STA     (L00ED),Y
-        CMP     L977F
-        LDA     LC7BD
-        SBC     L13C0
-        CPY     #$7F
-        TYA
-        AND     L9A90,X
-        CPY     #$F9
-        SBC     #$F9
-        STX     L8E8E
-        STY     L808C
-        STX     LA48E
-        STY     L808E
-        STA     L0095,X
-        LDY     L9595
-        STA     LA19D,X
-        LDA     (L00A1,X)
-        LDA     L928F
-        LDX     #$A1
-        LDX     #$A0
-        LDY     #$A0
-        TXA
+.L89CA
+        EQUB    $04
+
+        EQUB    $57,$A4,$B7,$C9,$4D,$27,$57,$91
+        EQUB    $ED,$5C,$57,$8F,$82,$0C,$CD,$7F
+        EQUB    $97,$AD,$BD,$C7,$ED,$C0,$13,$C0
+        EQUB    $7F,$98,$AF,$3D,$90,$9A,$F3,$C0
+        EQUB    $F9,$E3,$E9,$F9
+
+.L89EF
+        EQUB    $D3
+
+        EQUB    $8E,$8E,$8E,$8C,$8C,$80,$8E,$8E
+        EQUB    $A4,$8C,$8E,$80,$89,$8B,$95,$95
+        EQUB    $AC,$95,$95,$9D,$9D,$A1,$A1,$A1
+        EQUB    $AD,$8F,$92,$AF,$A3,$A3,$A2,$A1
+        EQUB    $A2,$A0,$A0,$A0,$8A
+
 .L8A15
         PHA
         CMP     #$0F
@@ -2555,7 +2363,6 @@ L8B63 = L8B61+2
 .L8C7D
         JSR     L8B02
 
-.L8C80
         PHP
         LDX     #$C4
         JSR     LA140
@@ -2574,11 +2381,9 @@ L8B63 = L8B61+2
         RTS
 
 .L8C98
-        PLP
-        CMP     #$0D
-        BNE     L8C80
+        EQUB    $28
 
-        BEQ     L8C70
+        EQUB    $C9,$0D,$D0,$E3,$F0,$D1
 
 .L8C9F
         JSR     L9145
@@ -2867,7 +2672,6 @@ L8D17 = L8D16+1
         LDY     #$13
         BNE     L8E49
 
-.L8E43
         CPX     #$05
         BCS     L8E58
 
@@ -2893,18 +2697,17 @@ L8E54 = L8E52+2
         EOR     #$4E
         JSR     L0001
 
-        ASL     L21FF,X
-        BIT     L00FF
-        ROL     A
-        AND     L35FF
-        STA     LBE4A,Y
-        DEC     L57B7
-        EOR     L42B8
-        EOR     (L004E,X)
-        STA     L3352,X
-.L8E82
-        STX     L00A2
-L8E83 = L8E82+1
+.L8E61
+        EQUB    $1B
+
+        EQUB    $FF,$1E,$FF,$21,$FF,$24,$FF,$27
+        EQUB    $FF,$2A,$FF,$2D,$FF,$35,$99,$4A
+        EQUB    $BE,$9B,$44,$CE,$B7,$57,$4D,$B8
+        EQUB    $42,$2F,$9E,$41,$4E,$9D,$52,$33
+        EQUB    $8E
+
+.L8E83
+        LDX     #$00
 .L8E85
         LDY     #$FF
         JMP     LFFF4
@@ -2913,7 +2716,6 @@ L8E83 = L8E82+1
         LDA     #$A2
 L8E8C = L8E8B+1
         BRK
-.L8E8E
         EQUB    $A0
 
         BRK
@@ -3086,7 +2888,6 @@ L8F48 = L8F46+2
         LDY     #$09
 .L8F8E
         LDA     L0DFE,Y
-L8F8F = L8F8E+1
         STA     (L009C),Y
         DEY
         CPY     #$01
@@ -3160,10 +2961,10 @@ L8F8F = L8F8E+1
         ROR     L7465
         JSR     L7573
 
-.L8FEF
         ADC     L2000
-L8FF1 = L8FEF+2
-        EOR     L0091
+.L8FF1
+        JSR     L9145
+
         EOR     L0063
         ROR     L7465
         JSR     L7453
@@ -3535,16 +3336,15 @@ L9215 = L9214+1
         CMP     (L0020),Y
         CLV
         STX     L006E,Y
-        ADC     L0074
-        JSR     L756E
+        EQUS    "net"
 
-        ADC     L6562
-        BRK
+.L924C
+        EQUS    "work number",$00
+
 .L9258
-        EQUB    $C9
+        CMP     #$26
+        BEQ     L9266
 
-        ROL     L00F0
-        ASL     A
         CMP     #$2E
         BEQ     L9266
 
@@ -3590,10 +3390,8 @@ L9215 = L9214+1
         ORA     L0002
         DEY
         PHP
-.L928E
         BPL     L9291
 
-L928F = L928E+1
 .L9291
         STX     L00F2
         STY     L00F3
@@ -3956,9 +3754,15 @@ L9380 = L937F+1
         PLA
         RTS
 
-        STA     L0000,Y
-        BRK
-        EQUB    $0F
+.L948B
+        EQUB    $80
+
+        EQUB    $99,$00,$00,$00,$0F
+
+.L9491
+        EQUB    $FF
+
+        EQUB    $FF,$FF,$0F,$FF,$FF
 
 .L9497
         PHA
@@ -4149,7 +3953,6 @@ L9547 = L9546+1
         LDA     (L009C),Y
         PHA
         INY
-.L9595
         LDA     (L009C),Y
         LDY     #$0F
         STA     (L009E),Y
@@ -4498,9 +4301,7 @@ L96B4 = L96B3+1
         TYA
 .L977C
         TAY
-.L977D
         BIT     L9491
-L977F = L977D+2
         LDA     #$64
         JSR     L978D
 
@@ -5073,10 +4874,8 @@ L9800 = L97FF+1
         LDA     L0F02,Y
         DEY
         CPY     #$02
-.L9A8F
         BCS     L9A87
 
-L9A90 = L9A8F+1
 .L9A91
         DEY
 .L9A92
@@ -6078,7 +5877,6 @@ L9A90 = L9A8F+1
 .LA01F
         STX     L0F08
 LA020 = LA01F+1
-.LA022
         LDY     #$02
         STY     L00B0
         STY     L0F05
@@ -6369,7 +6167,6 @@ LA185 = LA184+1
         CMP     #$0D
         BNE     LA1A2
 
-.LA19D
         BIT     L9491
         BVS     LA1A3
 
@@ -6781,748 +6578,167 @@ LA3DF = LA3DE+1
         LDY     #$A3
         JMP     LFFF7
 
+.LA3F0
+        EQUB    $43
+
 .LA3F1
-        JMP     (L736F)
+        EQUB    $6C
 
-LA3F2 = LA3F1+1
-        ADC     L0080
-        LDA     L7544,Y
-        ADC     LC470
-        TSX
-        LSR     L7465
-        ORA     L508B,Y
-        JMP     (L706C)
+.LA3F2
+        EQUB    $6F,$73,$65,$80,$93,$B9,$44,$75
+        EQUB    $6D,$70,$C4,$1A,$BA,$4E,$65,$74
+        EQUB    $80,$19,$8B,$50,$6F,$6C,$6C,$70
+        EQUB    $73,$88,$C2,$B1,$50,$72,$69,$6E
+        EQUB    $74,$CC,$9C,$B9,$50,$72,$6F,$74
+        EQUB    $8E,$0B,$B3,$50,$53,$88,$ED,$AF
+        EQUB    $52,$6F,$66,$66,$80,$D3,$8A,$54
+        EQUB    $79,$70,$65,$CC,$99,$B9,$55,$6E
+        EQUB    $70,$72,$6F,$74,$8E,$3C,$B3,$80
+        EQUB    $41,$63,$63,$65,$73,$73,$C9,$E5
+        EQUB    $92,$42,$79,$65,$80,$9D,$94,$43
+        EQUB    $64,$69,$72,$C6,$0F,$AD,$44,$65
+        EQUB    $6C,$65,$74,$65,$C3,$E5,$92,$44
+        EQUB    $69,$72,$81,$DC,$93,$45,$78,$81
+        EQUB    $6A,$AD,$46,$6C,$69,$70,$80,$55
+        EQUB    $A3,$46,$53,$8B,$7A,$A0,$49,$6E
+        EQUB    $66,$6F,$C3,$E5,$92
 
-        DEY
-        LDA     (L0050),Y
-        ADC     #$6E
-        CPY     LB99C
-        BVC     LA48A
-
-        STX     LB30B
-        BVC     LA472
-
-        DEY
-        SBC     L52AF
-        ROR     L0066
-        TXA
-        ADC     L6570,Y
-        CPY     LB999
-        EOR     L006E,X
-        BVS     LA4A6
-
-        STX     LB33C
-        EOR     (L0063,X)
-        ADC     L0073
-        CMP     #$E5
-        ADC     L8065,Y
-        STA     L4394,X
-        ADC     #$72
-        DEC     L000F
-        LDA     L6544
-        JMP     (L7465)
-
-        ADC     L00C3
-        SBC     L0092
-        ADC     #$72
-        STA     (L00DC,X)
-        EOR     L0078
-        STA     (L006A,X)
-        LDA     L6C46
-        ADC     #$70
-        EOR     L00A3,X
-        LSR     L0053
-        LDY     #$49
-.LA471
-        ROR     L6F66
-LA472 = LA471+1
-        SBC     L0092
 .LA477
-        EOR     #$20
-        ADC     (L006D,X)
-        SEI
-        STA     L634C
-        ADC     (L0074,X)
-        STA     (L005E,X)
-        LDA     L654C
-        SEI
-        STA     (L0064,X)
-.LA48A
-        LDA     L694C
-.LA48E
-        CMP     L00E5
-        BVC     LA4F4
+        EQUB    $49,$20,$61,$6D,$C2,$78,$8D,$4C
+        EQUB    $63,$61,$74,$81,$5E,$AD,$4C,$65
+        EQUB    $78,$81,$64,$AD,$4C,$69,$62,$C5
+        EQUB    $E5,$92,$50,$61,$73,$73,$C7,$BB
+        EQUB    $8D,$52,$65,$6D,$6F,$76,$65,$C3
+        EQUB    $65,$AF,$52,$65,$6E,$61,$6D,$65
+        EQUB    $CA,$8A,$93,$57,$69,$70,$65,$81
+        EQUB    $58,$B3,$80,$14,$8E,$4E,$65,$74
+        EQUB    $80,$95,$8B,$55,$74,$69,$6C,$73
+        EQUB    $80,$91,$8B,$80,$48,$61,$6C,$74
+        EQUB    $FC,$20,$DF,$4A,$53,$52,$FC,$04
+        EQUB    $FB,$50,$65,$65,$6B,$FC,$01,$FE
+        EQUB    $50,$6F,$6B,$65,$FC,$02,$FD,$50
+        EQUB    $72,$6F,$63,$FC,$08,$F7,$55,$74
+        EQUB    $69,$6C,$73,$A9,$10,$EF,$80,$18
+        EQUB    $A5,$EF,$E9,$0D,$30,$2D,$C9,$07
+        EQUB    $B0,$29,$AA,$A0,$06,$B9,$A9,$00
+        EQUB    $48
 
-        STA     L6552
-        ADC     L766F
-        ADC     L00C3
-        ADC     L00AF
-        ADC     L006E
-        ADC     (L006D,X)
-.LA4A6
-        ADC     L00CA
-        TXA
-        ADC     #$70
-        ADC     L0081
-        CLI
-        STX     L654E
-        STA     L008B,X
-        EOR     L0074,X
-        ADC     #$6C
-        STA     (L008B),Y
-        PHA
-        ADC     (L006C,X)
-        JSR     L4ADF
-
-        BVC     LA537
-
-        ADC     L006B
-        ORA     (L00FE,X)
-        BVC     LA548
-
-        ADC     L00FC
-        SBC     L7250,X
-        PHP
-        EOR     L0074,X
-        ADC     #$6C
-        LDA     #$10
-        CLC
-        LDA     L00EF
-        SBC     #$0D
-.LA4F3
-        BMI     LA522
-
-LA4F4 = LA4F3+1
-        CMP     #$07
-        BCS     LA522
-
-        TAX
-        LDY     #$06
-.LA4FC
-        LDA     L00A9,Y
-        PHA
 .LA500
-        LDA     L00ED,Y
-        STA     L00A9,Y
-        DEY
-        BNE     LA4FC
+        EQUB    $B9,$ED,$00,$99,$A9,$00,$88,$D0
+        EQUB    $F3,$20,$16,$A5,$A0,$FA,$68,$99
+        EQUB    $B0,$FF,$C8,$D0,$F9,$60,$BD,$2A
+        EQUB    $A5,$48,$BD,$23,$A5,$48,$B1,$AC
+        EQUB    $84,$A9,$60,$30,$21,$A3,$C0,$18
+        EQUB    $2D,$C4,$A5,$A5,$A5,$A5,$A6,$A6
+        EQUB    $A8,$2C,$6C,$0D,$10,$08,$C9,$04
+        EQUB    $F0,$05,$A9,$08,$85,$A9,$60,$A2
+        EQUB    $00,$A0,$10,$20,$AD,$94,$AD,$09
+        EQUB    $0F,$20,$95,$A5,$8D,$0B,$0F,$AD
+        EQUB    $08,$0F,$20,$95,$A5,$8D,$0A,$0F
+        EQUB    $AD,$07,$0F,$20,$95,$A5,$8D,$09
+        EQUB    $0F,$A9,$00,$8D,$08,$0F,$AD,$06
+        EQUB    $0F,$48,$AD,$05,$0F,$20,$95,$A5
+        EQUB    $8D,$07,$0F,$68,$48,$29,$0F,$20
+        EQUB    $95,$A5,$8D,$06,$0F,$68,$4A,$4A
+        EQUB    $4A,$4A,$69,$51,$20,$95,$A5,$8D
+        EQUB    $05,$0F,$A0,$06,$B9,$05,$0F,$91
+        EQUB    $AC,$88,$10,$F8,$60,$08,$AA,$F0
+        EQUB    $09,$F8,$A9,$00,$18,$69,$01,$CA
+        EQUB    $D0,$FA,$28,$60,$0E,$60,$0D,$98
+        EQUB    $B0,$03,$91,$AC,$60,$A5,$9D,$85
+        EQUB    $AB,$85,$A1,$A9,$6F,$85,$AA,$85
+        EQUB    $A0,$A2,$0F,$20,$F8,$A6,$4C,$8C
+        EQUB    $85,$A6,$9F,$86,$AB,$84,$AA,$6E
+        EQUB    $61,$0D,$A8,$85,$AE,$D0,$1B,$A9
+        EQUB    $03,$20,$CE,$A0,$B0,$3D,$4A,$4A
+        EQUB    $AA,$B1,$AA,$F0,$36,$C9,$3F,$F0
+        EQUB    $04,$E8,$8A,$D0,$EC,$8A,$A2,$00
+        EQUB    $81,$AC,$20,$CE,$A0,$B0,$24,$88
+        EQUB    $84,$AA,$A9,$C0,$A0,$01,$A2,$0B
+        EQUB    $C4,$AE,$71,$AA,$F0,$03,$30,$0E
+        EQUB    $18,$20,$F8,$A6,$B0,$0F,$A9,$3F
+        EQUB    $A0,$01,$91,$AA,$D0,$07,$69,$01
+        EQUB    $D0,$EE,$88,$91,$AC,$2E,$61,$0D
+        EQUB    $60,$A5,$9D,$85,$AB,$A0,$7F,$B1
+        EQUB    $9C,$C8,$84,$AA,$AA,$CA,$A0,$00
+        EQUB    $20,$F8,$A6,$4C,$DD,$AC,$AA,$C9
+        EQUB    $13,$B0,$08,$BD,$4E,$A6,$48,$BD
+        EQUB    $3C,$A6,$48,$60,$5F,$72,$06,$12
+        EQUB    $27,$2D,$33,$43,$E3,$EC,$FA,$01
+        EQUB    $E7,$EA,$06,$0E,$19,$24,$A6,$A6
+        EQUB    $A7,$A7,$A7,$A7,$A7,$A7,$A7,$A7
+        EQUB    $A7,$A8,$A6,$A6,$A8,$A8,$A8,$A8
+        EQUB    $2C,$6C,$0D,$30,$03,$4C,$49,$A7
+        EQUB    $A0,$02,$B9,$FF,$0D,$91,$F0,$88
+        EQUB    $D0,$F8,$60,$2C,$6C,$0D,$10,$ED
+        EQUB    $A0,$00,$20,$99,$B7,$A0,$02,$B1
+        EQUB    $F0,$99,$FF,$0D,$88,$D0,$F8,$20
+        EQUB    $09,$8E,$A2,$0F,$BD,$60,$10,$A8
+        EQUB    $29,$02,$F0,$50,$98,$29,$DF,$9D
+        EQUB    $60,$10,$A8,$20,$86,$B5,$D0,$44
+        EQUB    $18,$98,$29,$04,$F0,$10,$98,$09
+        EQUB    $20,$A8,$BD,$30,$10,$8D,$02,$0E
+        EQUB    $8A,$69,$20,$8D,$72,$10,$98,$29
+        EQUB    $08,$F0,$10,$98,$09,$20,$A8,$BD
+        EQUB    $30,$10,$8D,$03,$0E,$8A,$69,$20
+        EQUB    $8D,$73,$10,$98,$29,$10,$F0,$10
+        EQUB    $98,$09,$20,$A8,$BD,$30,$10,$8D
+        EQUB    $04,$0E,$8A,$69,$20,$8D,$74,$10
+        EQUB    $98,$9D,$60,$10,$CA,$10,$A5,$60
+        EQUB    $18,$90,$01,$38,$A9,$17,$85,$AA
+        EQUB    $A5,$9D,$85,$AB,$A0,$01,$A2,$05
+        EQUB    $90,$04,$B1,$AC,$91,$AA,$B1,$AA
+        EQUB    $91,$AC,$C8,$CA,$10,$F2,$60,$A5
+        EQUB    $9F,$85,$AB,$C8,$98,$85,$AA,$AA
+        EQUB    $18,$90,$E5,$C8,$B1,$AC,$C8,$91
+        EQUB    $9E,$B1,$AC,$C8,$91,$9E,$20,$65
+        EQUB    $A8,$51,$9E,$D0,$02,$91,$9E,$60
+        EQUB    $AD,$68,$0D,$4C,$FE,$A7,$C8,$B1
+        EQUB    $AC,$4C,$36,$B3,$2C,$6C,$0D,$10
+        EQUB    $10,$A0,$03,$B9,$71,$10,$91,$AC
+        EQUB    $88,$D0,$F8,$60,$2C,$6C,$0D,$30
+        EQUB    $06,$A9,$00,$A8,$91,$AC,$60,$A0
+        EQUB    $01,$B1,$AC,$C9,$20,$90,$0A,$C9
+        EQUB    $30,$B0,$06,$AA,$BD,$10,$10,$D0
+        EQUB    $07,$A9,$00,$AA,$81,$AC,$F0,$26
+        EQUB    $BD,$40,$10,$29,$02,$F0,$F2,$8A
+        EQUB    $99,$71,$10,$BD,$10,$10,$99,$01
+        EQUB    $0E,$C0,$01,$D0,$18,$98,$48,$A0
+        EQUB    $04,$20,$BF,$A7,$68,$A8,$BD,$40
+        EQUB    $10,$09,$24,$9D,$40,$10,$C8,$C0
+        EQUB    $04,$D0,$BE,$88,$60,$C0,$02,$D0
+        EQUB    $13,$98,$48,$A0,$08,$20,$BF,$A7
+        EQUB    $68,$A8,$BD,$40,$10,$09,$28,$9D
+        EQUB    $40,$10,$D0,$E2,$98,$48,$A0,$10
+        EQUB    $20,$BF,$A7,$68,$A8,$BD,$40,$10
+        EQUB    $09,$30,$9D,$40,$10,$D0,$CF,$8A
+        EQUB    $48,$A2,$0F,$BD,$60,$10,$2A,$2A
+        EQUB    $10,$14,$98,$3D,$60,$10,$F0,$05
+        EQUB    $98,$09,$20,$D0,$01,$98,$49,$FF
+        EQUB    $3D,$60,$10,$9D,$60,$10,$CA,$10
+        EQUB    $E2,$68,$AA,$60,$A0,$01,$B1,$9C
+        EQUB    $A0,$00,$4C,$FE,$A7,$A0,$7F,$B1
+        EQUB    $9C,$A0,$01,$91,$AC,$C8,$A9,$80
+        EQUB    $91,$AC,$60,$AD,$09,$0E,$C8,$91
+        EQUB    $AC,$60,$AD,$08,$0E,$10,$F7,$A9
+        EQUB    $6F,$38,$ED,$6B,$0D,$B0,$EF,$C8
+        EQUB    $B9,$6C,$0D,$91,$AC,$C0,$03,$D0
+        EQUB    $F6,$60,$C8,$B1,$AC,$99,$6C,$0D
+        EQUB    $C0,$03,$D0,$F6,$60,$20,$65,$A8
+        EQUB    $A0,$00,$AD,$71,$0D,$C9,$FF,$D0
+        EQUB    $06,$98,$91,$AC,$C8,$D0,$13,$C8
+        EQUB    $91,$AC,$C8,$C8,$B1,$AC,$F0,$07
+        EQUB    $4D
+
+.LA841
+        EQUB    $71,$0D,$D0,$07,$F0,$03,$AD,$01
+        EQUB    $0E,$91,$AC,$60
+
+.LA84D
+        EQUB    $82,$9C,$FF,$FF,$42,$52,$49,$44
+        EQUB    $47,$45,$9C,$00,$7F,$9C,$00,$00
+        EQUB    $71,$0D,$FF,$FF,$73,$0D,$FF,$FF
 
-        JSR     LA516
-
-        LDY     #$FA
-.LA50E
-        PLA
-        STA     LFFB0,Y
-        INY
-        BNE     LA50E
-
-        RTS
-
-.LA516
-        LDA     LA52A,X
-        PHA
-        LDA     LA523,X
-        PHA
-        LDA     (L00AC),Y
-        STY     L00A9
-.LA522
-        RTS
-
-.LA523
-        BMI     LA546
-
-        CPY     #$18
-.LA528
-        AND     LA5C4
-LA52A = LA528+2
-        LDA     L00A5
-        LDA     L00A6
-        LDX     L00A8
-        BIT     L0D6C
-        BPL     LA53E
-
-.LA536
-        CMP     #$04
-LA537 = LA536+1
-        BEQ     LA53F
-
-        LDA     #$08
-        STA     L00A9
-.LA53E
-        RTS
-
-.LA53F
-        LDX     #$00
-        LDY     #$10
-        JSR     L94AD
-
-.LA546
-        LDA     L0F09
-LA548 = LA546+2
-        JSR     LA595
-
-        STA     L0F0B
-        LDA     L0F08
-        JSR     LA595
-
-        STA     L0F0A
-        LDA     L0F07
-        JSR     LA595
-
-        STA     L0F09
-        LDA     #$00
-        STA     L0F08
-        LDA     L0F06
-        PHA
-        LDA     L0F05
-        JSR     LA595
-
-        STA     L0F07
-        PLA
-        PHA
-        AND     #$0F
-        JSR     LA595
-
-        STA     L0F06
-        PLA
-        LSR     A
-        LSR     A
-        LSR     A
-        LSR     A
-        ADC     #$51
-        JSR     LA595
-
-        STA     L0F05
-        LDY     #$06
-.LA58C
-        LDA     L0F05,Y
-        STA     (L00AC),Y
-        DEY
-        BPL     LA58C
-
-        RTS
-
-.LA595
-        PHP
-        TAX
-        BEQ     LA5A2
-
-        SED
-        LDA     #$00
-.LA59C
-        CLC
-        ADC     #$01
-        DEX
-        BNE     LA59C
-
-.LA5A2
-        PLP
-        RTS
-
-        ASL     L0D60
-        TYA
-        BCS     LA5AD
-
-        STA     (L00AC),Y
-        RTS
-
-.LA5AD
-        LDA     L009D
-        STA     L00AB
-        STA     L00A1
-        LDA     #$6F
-        STA     L00AA
-        STA     L00A0
-        LDX     #$0F
-        JSR     LA6F8
-
-        JMP     L858C
-
-        LDX     L009F
-.LA5C3
-        STX     L00AB
-LA5C4 = LA5C3+1
-        STY     L00AA
-        ROR     L0D61
-        TAY
-        STA     L00AE
-        BNE     LA5EA
-
-        LDA     #$03
-.LA5D1
-        JSR     LA0CE
-
-        BCS     LA613
-
-        LSR     A
-        LSR     A
-        TAX
-        LDA     (L00AA),Y
-        BEQ     LA613
-
-        CMP     #$3F
-        BEQ     LA5E5
-
-        INX
-        TXA
-        BNE     LA5D1
-
-.LA5E5
-        TXA
-        LDX     #$00
-        STA     (L00AC,X)
-.LA5EA
-        JSR     LA0CE
-
-        BCS     LA613
-
-        DEY
-        STY     L00AA
-        LDA     #$C0
-        LDY     #$01
-        LDX     #$0B
-        CPY     L00AE
-        ADC     (L00AA),Y
-        BEQ     LA601
-
-        BMI     LA60E
-
-.LA600
-        CLC
-.LA601
-        JSR     LA6F8
-
-        BCS     LA615
-
-        LDA     #$3F
-        LDY     #$01
-        STA     (L00AA),Y
-        BNE     LA615
-
-.LA60E
-        ADC     #$01
-        BNE     LA600
-
-        DEY
-.LA613
-        STA     (L00AC),Y
-.LA615
-        ROL     L0D61
-        RTS
-
-        LDA     L009D
-        STA     L00AB
-        LDY     #$7F
-        LDA     (L009C),Y
-        INY
-        STY     L00AA
-.LA624
-        TAX
-        DEX
-        LDY     #$00
-        JSR     LA6F8
-
-        JMP     LACDD
-
-        TAX
-        CMP     #$13
-        BCS     LA63B
-
-        LDA     LA64E,X
-        PHA
-        LDA     LA63C,X
-        PHA
-.LA63B
-        RTS
-
-        ASL     L0012
-        AND     L4333
-        CPX     L01FA
-        NOP
-        ASL     L000E
-.LA64C
-        ORA     LA624,Y
-LA64E = LA64C+2
-        LDX     L00A7
-        TAY
-        LDX     L00A6
-        TAY
-        TAY
-        TAY
-        TAY
-        BIT     L0D6C
-        BMI     LA668
-
-.LA665
-        JMP     LA749
-
-.LA668
-        LDY     #$02
-.LA66A
-        LDA     L0DFF,Y
-        STA     (L00F0),Y
-        DEY
-        BNE     LA66A
-
-        RTS
-
-        BIT     L0D6C
-        BPL     LA665
-
-        LDY     #$00
-        JSR     LB799
-
-        LDY     #$02
-.LA67F
-        LDA     (L00F0),Y
-        STA     L0DFF,Y
-        DEY
-        BNE     LA67F
-
-        JSR     L8E09
-
-        LDX     #$0F
-.LA68C
-        LDA     L1060,X
-        TAY
-        AND     #$02
-        BEQ     LA6E4
-
-        TYA
-        AND     #$DF
-        STA     L1060,X
-        TAY
-        JSR     LB586
-
-        BNE     LA6E4
-
-        CLC
-        TYA
-        AND     #$04
-        BEQ     LA6B6
-
-        TYA
-        ORA     #$20
-        TAY
-        LDA     L1030,X
-        STA     L0E02
-        TXA
-        ADC     #$20
-        STA     L1072
-.LA6B6
-        TYA
-        AND     #$08
-        BEQ     LA6CB
-
-        TYA
-        ORA     #$20
-        TAY
-        LDA     L1030,X
-        STA     L0E03
-        TXA
-        ADC     #$20
-        STA     L1073
-.LA6CB
-        TYA
-        AND     #$10
-        BEQ     LA6E0
-
-        TYA
-        ORA     #$20
-        TAY
-        LDA     L1030,X
-        STA     L0E04
-        TXA
-        ADC     #$20
-        STA     L1074
-.LA6E0
-        TYA
-        STA     L1060,X
-.LA6E4
-        DEX
-        BPL     LA68C
-
-        RTS
-
-        CLC
-        BCC     LA6EC
-
-        SEC
-.LA6EC
-        LDA     #$17
-        STA     L00AA
-        LDA     L009D
-        STA     L00AB
-        LDY     #$01
-        LDX     #$05
-.LA6F8
-        BCC     LA6FE
-
-        LDA     (L00AC),Y
-        STA     (L00AA),Y
-.LA6FE
-        LDA     (L00AA),Y
-        STA     (L00AC),Y
-        INY
-        DEX
-        BPL     LA6F8
-
-        RTS
-
-        LDA     L009F
-        STA     L00AB
-        INY
-        TYA
-        STA     L00AA
-        TAX
-        CLC
-        BCC     LA6F8
-
-        INY
-        LDA     (L00AC),Y
-        INY
-        STA     (L009E),Y
-        LDA     (L00AC),Y
-        INY
-        STA     (L009E),Y
-        JSR     LA865
-
-        EOR     (L009E),Y
-        BNE     LA727
-
-        STA     (L009E),Y
-.LA727
-        RTS
-
-        LDA     L0D68
-        JMP     LA7FE
-
-        INY
-        LDA     (L00AC),Y
-        JMP     LB336
-
-        BIT     L0D6C
-        BPL     LA749
-
-        LDY     #$03
-.LA73B
-        LDA     L1071,Y
-        STA     (L00AC),Y
-        DEY
-        BNE     LA73B
-
-        RTS
-
-        BIT     L0D6C
-        BMI     LA74F
-
-.LA749
-        LDA     #$00
-        TAY
-        STA     (L00AC),Y
-        RTS
-
-.LA74F
-        LDY     #$01
-.LA751
-        LDA     (L00AC),Y
-        CMP     #$20
-        BCC     LA761
-
-        CMP     #$30
-        BCS     LA761
-
-        TAX
-        LDA     L1010,X
-        BNE     LA768
-
-.LA761
-        LDA     #$00
-        TAX
-        STA     (L00AC,X)
-        BEQ     LA78E
-
-.LA768
-        LDA     L1040,X
-        AND     #$02
-        BEQ     LA761
-
-        TXA
-        STA     L1071,Y
-        LDA     L1010,X
-        STA     L0E01,Y
-        CPY     #$01
-        BNE     LA795
-
-        TYA
-        PHA
-        LDY     #$04
-        JSR     LA7BF
-
-        PLA
-        TAY
-        LDA     L1040,X
-        ORA     #$24
-        STA     L1040,X
-.LA78E
-        INY
-        CPY     #$04
-        BNE     LA751
-
-        DEY
-        RTS
-
-.LA795
-        CPY     #$02
-        BNE     LA7AC
-
-        TYA
-        PHA
-        LDY     #$08
-        JSR     LA7BF
-
-        PLA
-        TAY
-        LDA     L1040,X
-        ORA     #$28
-        STA     L1040,X
-        BNE     LA78E
-
-.LA7AC
-        TYA
-        PHA
-        LDY     #$10
-        JSR     LA7BF
-
-        PLA
-        TAY
-        LDA     L1040,X
-        ORA     #$30
-        STA     L1040,X
-        BNE     LA78E
-
-.LA7BF
-        TXA
-        PHA
-        LDX     #$0F
-.LA7C3
-        LDA     L1060,X
-        ROL     A
-        ROL     A
-        BPL     LA7DE
-
-        TYA
-        AND     L1060,X
-        BEQ     LA7D5
-
-        TYA
-        ORA     #$20
-        BNE     LA7D6
-
-.LA7D5
-        TYA
-.LA7D6
-        EOR     #$FF
-        AND     L1060,X
-        STA     L1060,X
-.LA7DE
-        DEX
-        BPL     LA7C3
-
-        PLA
-        TAX
-        RTS
-
-        LDY     #$01
-        LDA     (L009C),Y
-        LDY     #$00
-        JMP     LA7FE
-
-        LDY     #$7F
-        LDA     (L009C),Y
-        LDY     #$01
-        STA     (L00AC),Y
-        INY
-        LDA     #$80
-        STA     (L00AC),Y
-        RTS
-
-        LDA     L0E09
-.LA7FE
-        INY
-        STA     (L00AC),Y
-        RTS
-
-        LDA     L0E08
-        BPL     LA7FE
-
-        LDA     #$6F
-        SEC
-        SBC     L0D6B
-        BCS     LA7FE
-
-.LA80F
-        INY
-        LDA     L0D6C,Y
-        STA     (L00AC),Y
-        CPY     #$03
-        BNE     LA80F
-
-        RTS
-
-.LA81A
-        INY
-        LDA     (L00AC),Y
-        STA     L0D6C,Y
-        CPY     #$03
-        BNE     LA81A
-
-        RTS
-
-        JSR     LA865
-
-        LDY     #$00
-        LDA     L0D71
-        CMP     #$FF
-        BNE     LA837
-
-        TYA
-        STA     (L00AC),Y
-        INY
-        BNE     LA84A
-
-.LA837
-        INY
-        STA     (L00AC),Y
-        INY
-        INY
-        LDA     (L00AC),Y
-        BEQ     LA847
-
-.LA840
-        EOR     L0D71
-LA841 = LA840+1
-        BNE     LA84C
-
-        BEQ     LA84A
-
-.LA847
-        LDA     L0E01
-.LA84A
-        STA     (L00AC),Y
-.LA84C
-        RTS
-
-        EOR     #$44
-        EOR     L009C
-        BRK
-        EQUB    $7F
-
-        BRK
-        EQUB    $00
-
-        ADC     (L000D),Y
-        ORA     LFFFF
 .LA865
         LDA     L0D71
 .LA868
@@ -7750,20 +6966,16 @@ LA900 = LA8FF+1
         LDA     L00EF
         RTS
 
-        CPX     LECEC
-        SBC     (L0050,X)
+.LA99E
+        EQUB    $57
+
+        EQUB    $EC,$EC,$EC,$AF,$D7,$57,$E1,$50
+
 .LA9A7
-        STX     LAAAA
-        TAX
-        LDA     #$AA
-        STX     LAAA9
-        TSX
-        ROR     L0106,X
-        ASL     L0106,X
-        TYA
-        LDY     #$DA
-        STA     (L009E),Y
-        LDA     #$00
+        EQUB    $8E,$AA,$AA,$AA,$A9,$AA,$8E,$A9
+        EQUB    $AA,$BA,$7E,$06,$01,$1E,$06,$01
+        EQUB    $98,$A0,$DA,$91,$9E,$A9,$00
+
 .LA9BE
         LDY     #$D9
         STA     (L009E),Y
@@ -7864,39 +7076,18 @@ LA900 = LA8FF+1
 .LAA3E
         RTS
 
-        ORA     #$0A
-        ORA     L009A,X
-        SBC     (L00E2,X)
-        CPX     L000B
-        ADC     L867A,Y
-        LDY     #$0E
-        CMP     #$07
-        BEQ     LAA5B
+.LAA3F
+        EQUB    $04
 
-        CMP     #$08
-        BNE     LAA3E
+        EQUB    $09,$0A,$14,$15,$9A,$9B,$E1,$E2
+        EQUB    $E3,$E4,$0B,$0C,$0F,$79,$7A,$86
+        EQUB    $87,$A0,$0E,$C9,$07,$F0,$04,$C9
+        EQUB    $08,$D0,$E3,$A2,$DB,$86,$9E,$B1
+        EQUB    $F0,$91,$9E,$88,$10,$F9,$C8,$C6
+        EQUB    $9E,$A5,$EF,$91,$9E,$84,$9E,$A0
+        EQUB    $14,$A9,$E9,$91,$9E,$A9,$01,$20
+        EQUB    $BE,$A9,$86,$9E
 
-.LAA5B
-        LDX     #$DB
-        STX     L009E
-.LAA5F
-        LDA     (L00F0),Y
-        STA     (L009E),Y
-        DEY
-        BPL     LAA5F
-
-        INY
-        DEC     L009E
-        LDA     L00EF
-        STA     (L009E),Y
-        STY     L009E
-        LDY     #$14
-        LDA     #$E9
-        STA     (L009E),Y
-        LDA     #$01
-        JSR     LA9BE
-
-        STX     L009E
 .LAA7C
         LDX     #$0D
         LDY     #$7C
@@ -7935,7 +7126,6 @@ LA900 = LA8FF+1
         STA     (L009C),Y
 .LAAA9
         DEY
-.LAAAA
         DEX
         BPL     LAA8A
 
@@ -8183,9 +7373,7 @@ LAC10 = LAC0E+2
         ADC     L656D
         BRK
 .LAC24
-        EQUB    $86
-
-        TXS
+        STX     L009A
         STY     L009B
         PHA
         ORA     #$00
@@ -8256,63 +7444,32 @@ LAC10 = LAC0E+2
         PLA
         RTS
 
-        BRK
-        EQUB    $00
+.LAC80
+        EQUB    $80
 
-        EOR     LFF8E,Y
-.LAC88
-        ADC     (L008E,X)
-LAC89 = LAC88+1
-        SBC     L2DFD,X
-        BMI     LAC92
+        EQUB    $9F,$00,$00,$59,$8E,$FF,$FF,$61
 
-        LDA     L00AA
-        PHA
-        LDA     #$E9
-        STA     L009E
-        LDY     #$00
-        STY     L00AA
-        LDA     L0350
-        STA     (L009E),Y
-        INC     L009E
-        LDA     L0351
-        PHA
-        TYA
-.LACAF
-        STA     (L009E),Y
-        LDX     L009E
-        LDY     L009F
-        LDA     #$0B
-        JSR     LFFF1
+.LAC89
+        STX     LFFFF
+.LAC8C
+        EQUB    $7F
 
-        PLA
-        LDY     #$00
-        STA     (L009E),Y
-        INY
-        LDA     (L009E),Y
-        PHA
-        LDX     L009E
-        INC     L009E
-        INC     L00AA
-        DEY
-        LDA     L00AA
-        CPX     #$F9
-        BNE     LACAF
+        EQUB    $9E,$FD,$FD,$2D,$FC,$FF,$FF,$30
+        EQUB    $FC,$FF,$FF,$A5,$AA,$48,$A9,$E9
+        EQUB    $85,$9E,$A0,$00,$84,$AA,$AD,$50
+        EQUB    $03,$91,$9E,$E6,$9E,$AD,$51,$03
+        EQUB    $48,$98,$91,$9E,$A6,$9E,$A4,$9F
+        EQUB    $A9,$0B,$20,$F1,$FF,$68,$A0,$00
+        EQUB    $91,$9E,$C8,$B1,$9E,$48,$A6,$9E
+        EQUB    $E6,$9E,$E6,$AA,$88,$A5,$AA,$E0
+        EQUB    $F9,$D0,$DF,$68,$84,$AA,$E6,$9E
+        EQUB    $20,$E4,$AC,$E6,$9E,$68,$85,$AA
 
-        PLA
-        STY     L00AA
-        INC     L009E
-        JSR     LACE4
-
-        INC     L009E
-        PLA
-        STA     L00AA
 .LACDD
         LDA     L0D69
         STA     L0D68
         RTS
 
-.LACE4
         LDA     L0355
         STA     (L009E),Y
         LDX     L0355
@@ -8648,7 +7805,6 @@ LAE5D = LAE5B+2
         EOR     #$1C
         BNE     LAEDA
 
-.LAEE6
         LDA     L0E32
         EOR     #$2E
         BEQ     LAEF1
@@ -8889,7 +8045,6 @@ LAF5C = LAF5B+1
 
 .LB017
         LDY     #$18
-.LB019
         LDX     #$F8
 .LB01B
         LDA     L8D61,X
@@ -9104,10 +8259,8 @@ LB0B9 = LB0B8+1
 
         LDA     L00AC
         STA     (L009E),Y
-.LB13E
         JSR     LB15E
 
-LB13F = LB13E+1
         JMP     LB118
 
 .LB144
@@ -9176,6 +8329,11 @@ LB146 = LB144+2
 
         RTS
 
+.LB194
+        EQUB    $80
+
+        EQUB    $9F,$FF,$FF
+
 .LB198
         PHP
         LDA     L00B6
@@ -9201,233 +8359,48 @@ LB1B1 = LB1B0+1
         PLP
         JMP     LAF88
 
-        BRK
-        EQUB    $00
+        EQUB    $00,$00,$10
 
-        BPL     LB1BD
-
-        CLC
-        BRK
-        EQUB    $FF
-
-        STY     L00AC
-        JSR     LAFE0
-
-        STA     L00B4
-        JSR     LB16D
-
-        JSR     LB2E0
-
-        LDY     L00AC
-        JSR     LAFD5
-
-        LDA     (L00BB),Y
-        CMP     #$0D
-        BEQ     LB205
-
-        CLV
-        JSR     L9258
-
-        BCC     LB208
-
-        TYA
-        PHA
-        JSR     LB0EA
-
-        PLA
-        TAY
-        JSR     LA0A7
-
-        LDY     #$7A
-        LDA     L00B5
-        STA     (L00AE),Y
-        INY
-        LDA     L00B6
-        STA     (L00AE),Y
-        LDY     #$10
-        JSR     LB019
-
-        LDA     L00AF
-        STA     L009B
-        LDA     #$78
-        STA     L009A
-        BNE     LB236
-
-.LB205
-        BIT     L9491
-.LB208
-        BVS     LB236
-
-        LDX     #$06
-        LDY     #$10
-        LDA     #$20
-.LB210
-        STA     (L009C),Y
-        INY
-        DEX
-        BNE     LB210
-
-        JSR     LAFB5
-
-        LDY     L00AC
-        JSR     LFFC2
-
-        BEQ     LB236
-
-        LDX     #$06
-        STY     L00AC
-        LDY     #$10
-        STY     L00AD
-.LB228
-        LDY     L00AC
-        JSR     LFFC5
-
-        STY     L00AC
-        BCS     LB236
-
-        JSR     LB2F7
-
-        BNE     LB228
-
-.LB236
-        LDA     #$80
-        STA     L0098
-        JSR     L983F
-
-        JSR     LB0F6
-
-        JSR     LB0CF
-
-        JSR     LB0EA
-
-        BIT     L9491
-        JSR     LB198
-
-        JSR     L9145
-
-        JSR     LA022
-
-        CLC
-.LB253
-        LDA     (L009C),Y
-        CMP     #$20
-        BEQ     LB261
-
-        JSR     LFFE3
-
-        INY
-        CPY     #$1E
-        BNE     LB253
-
-.LB261
-        JSR     L9145
-
-.LB265
-        ORA     L68EA
-LB267 = LB265+2
-        BEQ     LB2DF
-
-        PHA
-        TAY
-        LDA     (L009E),Y
-        BPL     LB2D7
-
-        INY
-        INY
-        LDA     (L009E),Y
-        STA     L00B5
-        INY
-        LDA     (L009E),Y
-        STA     L00B6
-        INY
-        LDA     (L009E),Y
-        STA     L00AE
-        CLV
-        JSR     LB198
-
-        JSR     L9145
-
-        JSR     L7369
-
-        JSR     L00A2
-
-        LDA     (L00AE,X)
-        BNE     LB29C
-
-        JSR     L9145
-
-        ADC     L0061
-        ADC     L50B8,Y
-        SEC
-.LB29C
-        CMP     #$02
-        BNE     LB2AC
-
-.LB2A0
-        JSR     L9145
-
-        ROR     A
-        ADC     (L006D,X)
-        ADC     L6465
-        CLV
-        BVC     LB2D4
-
-.LB2AC
-        CMP     #$01
-        BNE     LB2A0
-
-        JSR     L9145
-
-        ADC     L0073,X
-        ADC     LAEE6,Y
-        LDA     (L00AE,X)
-        STA     L00B5
-        BEQ     LB2D4
-
-        JSR     L9145
-
-        JSR     L6977
-
-        PLA
-        JSR     LAEE6
-
-        LDA     (L00AE,X)
-        STA     L00B6
-        BIT     L9491
-        JSR     LB198
-
-.LB2D4
-        JSR     LFFE7
-
-.LB2D7
-        PLA
-        TAY
-        LDA     #$3F
-        STA     (L009E),Y
-        BNE     LB267
-
-.LB2DF
-        RTS
-
-.LB2E0
-        LDY     #$78
-.LB2E2
-        LDA     LB13F,Y
-        CPY     #$7D
-        BEQ     LB2ED
-
-        CPY     #$81
-        BNE     LB2EF
-
-.LB2ED
-        LDA     L009D
-.LB2EF
-        STA     (L00AE),Y
-        INY
-        CPY     #$84
-        BNE     LB2E2
-
-        RTS
+        EQUB    $00,$FF,$FF,$18,$00,$FF,$FF,$84
+        EQUB    $AC,$20,$E0,$AF,$85,$B4,$20,$6D
+        EQUB    $B1,$20,$E0,$B2,$A4,$AC,$20,$D5
+        EQUB    $AF,$B1,$BB,$C9,$0D,$F0,$2A,$B8
+        EQUB    $20,$58,$92,$90,$27,$98,$48,$20
+        EQUB    $EA,$B0,$68,$A8,$20,$A7,$A0,$A0
+        EQUB    $7A,$A5,$B5,$91,$AE,$C8,$A5,$B6
+        EQUB    $91,$AE,$A0,$10,$20,$19,$B0,$A5
+        EQUB    $AF,$85,$9B,$A9,$78,$85,$9A,$D0
+        EQUB    $31,$2C,$91,$94,$70,$2C,$A2,$06
+        EQUB    $A0,$10,$A9,$20,$91,$9C,$C8,$CA
+        EQUB    $D0,$FA,$20,$B5,$AF,$A4,$AC,$20
+        EQUB    $C2,$FF,$F0,$16,$A2,$06,$84,$AC
+        EQUB    $A0,$10,$84,$AD,$A4,$AC,$20,$C5
+        EQUB    $FF,$84,$AC,$B0,$05,$20,$F7,$B2
+        EQUB    $D0,$F2,$A9,$80,$85,$98,$20,$3F
+        EQUB    $98,$20,$F6,$B0,$20,$CF,$B0,$20
+        EQUB    $EA,$B0,$2C,$91,$94,$20,$98,$B1
+        EQUB    $20,$45,$91,$20,$22,$A0,$18,$B1
+        EQUB    $9C,$C9,$20,$F0,$08,$20,$E3,$FF
+        EQUB    $C8,$C0,$1E,$D0,$F2,$20,$45,$91
+        EQUB    $22,$0D,$EA,$68,$F0,$75,$48,$A8
+        EQUB    $B1,$9E,$10,$67,$C8,$C8,$B1,$9E
+        EQUB    $85,$B5,$C8,$B1,$9E,$85,$B6,$C8
+        EQUB    $B1,$9E,$85,$AE,$B8,$20,$98,$B1
+        EQUB    $20,$45,$91,$20,$69,$73,$20,$A2
+        EQUB    $00,$A1,$AE,$D0,$0B,$20,$45,$91
+        EQUB    $72,$65,$61,$64,$79,$B8,$50,$38
+        EQUB    $C9,$02,$D0,$0C,$20,$45,$91,$6A
+        EQUB    $61,$6D,$6D,$65,$64,$B8,$50,$28
+        EQUB    $C9,$01,$D0,$F0,$20,$45,$91,$62
+        EQUB    $75,$73,$79,$E6,$AE,$A1,$AE,$85
+        EQUB    $B5,$F0,$15,$20,$45,$91,$20,$77
+        EQUB    $69,$74,$68,$20,$E6,$AE,$A1,$AE
+        EQUB    $85,$B6,$2C,$91,$94,$20,$98,$B1
+        EQUB    $20,$E7,$FF,$68,$A8,$A9,$3F,$91
+        EQUB    $9E,$D0,$88,$60,$A0,$78,$B9,$3F
+        EQUB    $B1,$C0,$7D,$F0,$04,$C0,$81,$D0
+        EQUB    $02,$A5,$9D,$91,$AE,$C8,$C0,$84
+        EQUB    $D0,$EC,$60
 
 .LB2F7
         LDY     L00AD
@@ -9444,7 +8417,6 @@ LB267 = LB265+2
         INY
         STY     L00AD
         DEX
-.LB30B
         RTS
 
         LDA     (L00BE),Y
@@ -9482,7 +8454,6 @@ LB267 = LB265+2
 .LB336
         STA     L0D68
         STA     L0D69
-.LB33C
         RTS
 
         LDA     (L00BE),Y
@@ -10572,15 +9543,11 @@ LB865 = LB863+2
 
         LDA     #$00
         TAY
-.LB997
         JMP     LFFCE
 
-LB999 = LB997+2
         CLV
-.LB99B
         BVC     LB9A0
 
-LB99C = LB99B+1
         BIT     L9491
 .LB9A0
         JSR     LBC44
@@ -11180,343 +10147,69 @@ LBC28 = LBC26+2
         INX
         RTS
 
-        ORA     L0096
-        ORA     L00F2
-        ORA     L0007
-        ASL     L0027
-        ASL     L0068
-        ASL     L005E
-        ORA     L002D
-        ORA     L0020
-        ORA     L0042
-        ORA     L00A9
-        ORA     L00D1
-        ORA     L0086
-        DEY
-        STX     L0098,Y
-        CLC
-        CLC
-        CLC
-        JSR     L06C5
-
-        TAY
-        JSR     L06C5
-
-        JSR     LFFD4
-
-        JMP     L059C
-
-        JSR     L06C5
-
-        TAY
-        JSR     LFFD7
-
-        JMP     L053A
-
-        JSR     LFFE0
-
-        ROR     A
-        JSR     L0695
-
-        ROL     A
-        JMP     L059E
-
-        JSR     L06C5
-
-        BEQ     LBCE6
-
-        PHA
-        JSR     L0582
-
-        PLA
-        JSR     LFFCE
-
-        JMP     L059E
-
-.LBCE6
-        JSR     L06C5
-
-        TAY
-        LDA     #$00
-        JSR     LFFCE
-
-        JMP     L059C
-
-        JSR     L06C5
-
-        TAY
-        LDX     #$04
-.LBCF8
-        JSR     L06C5
-
-        STA     L00FF,X
-        DEX
-        BNE     LBCF8
-
-        JSR     L06C5
-
-        JSR     LFFDA
-
-        JSR     L0695
-
-        LDX     #$03
-.LBD0B
-        LDA     L0000,X
-        JSR     L0695
-
-        DEX
-        BPL     LBD0B
-
-        JMP     L0036
-
-        LDX     #$00
-        LDY     #$00
-.LBD1A
-        JSR     L06C5
-
-        STA     L0700,Y
-        INY
-        BEQ     LBD27
-
-        CMP     #$0D
-        BNE     LBD1A
-
-.LBD27
-        LDY     #$07
-        RTS
-
-        JSR     L0582
-
-        JSR     LFFF7
-
-        LDA     #$7F
-.LBD32
-        BIT     LFEE2
-        BVC     LBD32
-
-        STA     LFEE3
-.LBD3A
-        JMP     L0036
-
-        LDX     #$10
-.LBD3F
-        JSR     L06C5
-
-        STA     L0001,X
-        DEX
-        BNE     LBD3F
-
-        JSR     L0582
-
-        STX     L0000
-        STY     L0001
-        LDY     #$00
-        JSR     L06C5
-
-        JSR     LFFDD
-
-        JSR     L0695
-
-        LDX     #$10
-.LBD5B
-        LDA     L0001,X
-        JSR     L0695
-
-        DEX
-        BNE     LBD5B
-
-        BEQ     LBD3A
-
-        LDX     #$0D
-.LBD67
-        JSR     L06C5
-
-        STA     L00FF,X
-        DEX
-        BNE     LBD67
-
-        JSR     L06C5
-
-        LDY     #$00
-        JSR     LFFD1
-
-        PHA
-        LDX     #$0C
-.LBD7A
-        LDA     L0000,X
-        JSR     L0695
-
-        DEX
-        BPL     LBD7A
-
-        PLA
-        JMP     L053A
-
-        JSR     L06C5
-
-        TAX
-        JSR     L06C5
-
-        JSR     LFFF4
-
-.LBD90
-        BIT     LFEE2
-.LBD93
-        BVC     LBD90
-
-LBD94 = LBD93+1
-        STX     LFEE3
-.LBD98
-        JMP     L0036
-
-        JSR     L06C5
-
-        TAX
-        JSR     L06C5
-
-        TAY
-        JSR     L06C5
-
-        JSR     LFFF4
-
-        EOR     #$9D
-        BEQ     LBD98
-
-        ROR     A
-        JSR     L0695
-
-.LBDB1
-        BIT     LFEE2
-        BVC     LBDB1
-
-        STY     LFEE3
-        BVS     LBD90
-
-        JSR     L06C5
-
-        TAY
-.LBDBF
-        BIT     LFEE2
-        BPL     LBDBF
-
-        LDX     LFEE3
-        DEX
-        BMI     LBDD9
-
-.LBDCA
-        BIT     LFEE2
-        BPL     LBDCA
-
-        LDA     LFEE3
-        STA     L0128,X
-        DEX
-        BPL     LBDCA
-
-        TYA
-.LBDD9
-        LDX     #$28
-        LDY     #$01
-        JSR     LFFF1
-
-.LBDE0
-        BIT     LFEE2
-        BPL     LBDE0
-
-        LDX     LFEE3
-        DEX
-        BMI     LBDF9
-
-.LBDEB
-        LDY     L0128,X
-.LBDEE
-        BIT     LFEE2
-        BVC     LBDEE
-
-        STY     LFEE3
-        DEX
-        BPL     LBDEB
-
-.LBDF9
-        JMP     L0036
-
-        LDX     #$04
-.LBDFE
-        JSR     L06C5
-
-        STA     L0000,X
-        DEX
-        BPL     LBDFE
-
-        INX
-        LDY     #$00
-        TXA
-        JSR     LFFF1
-
-        BCC     LBE14
-
-        LDA     #$FF
-        JMP     L059E
-
-.LBE14
-        LDX     #$00
-        LDA     #$7F
-        JSR     L0695
-
-.LBE1B
-        LDA     L0700,X
-        JSR     L0695
-
-        INX
-        CMP     #$0D
-        BNE     LBE1B
-
-        JMP     L0036
-
-.LBE29
-        BIT     LFEE2
-        BVC     LBE29
-
-        STA     LFEE3
-        RTS
-
-.LBE32
-        BIT     LFEE6
-        BVC     LBE32
-
-        STA     LFEE7
-        RTS
-
-        LDA     L00FF
-        SEC
-        ROR     A
-        BMI     LBE50
-
-        PHA
-        LDA     #$00
-        JSR     L06BC
-
-        TYA
-.LBE48
-        JSR     L06BC
-
-LBE4A = LBE48+2
-        TXA
-        JSR     L06BC
-
-        PLA
-.LBE50
-        BIT     LFEE0
-        BVC     LBE50
-
-        STA     LFEE1
-        RTS
-
-.LBE59
-        BIT     LFEE2
-        BPL     LBE59
-
-        LDA     LFEE3
-        RTS
+.LBC94
+        EQUB    $37
+
+        EQUB    $05,$96,$05,$F2,$05,$07,$06,$27
+        EQUB    $06,$68,$06,$5E,$05,$2D,$05,$20
+        EQUB    $05,$42,$05,$A9,$05,$D1,$05,$86
+        EQUB    $88,$96,$98,$18,$18,$82,$18,$20
+        EQUB    $C5,$06,$A8,$20,$C5,$06,$20,$D4
+        EQUB    $FF,$4C,$9C,$05,$20,$C5,$06,$A8
+        EQUB    $20,$D7,$FF,$4C,$3A,$05,$20,$E0
+        EQUB    $FF,$6A,$20,$95,$06,$2A,$4C,$9E
+        EQUB    $05,$20,$C5,$06,$F0,$0B,$48,$20
+        EQUB    $82,$05,$68,$20,$CE,$FF,$4C,$9E
+        EQUB    $05,$20,$C5,$06,$A8,$A9,$00,$20
+        EQUB    $CE,$FF,$4C,$9C,$05,$20,$C5,$06
+        EQUB    $A8,$A2,$04,$20,$C5,$06,$95,$FF
+        EQUB    $CA,$D0,$F8,$20,$C5,$06,$20,$DA
+        EQUB    $FF,$20,$95,$06,$A2,$03,$B5,$00
+        EQUB    $20,$95,$06,$CA,$10,$F8,$4C,$36
+        EQUB    $00,$A2,$00,$A0,$00,$20,$C5,$06
+        EQUB    $99,$00,$07,$C8,$F0,$04,$C9,$0D
+        EQUB    $D0,$F3,$A0,$07,$60,$20,$82,$05
+        EQUB    $20,$F7,$FF,$A9,$7F,$2C,$E2,$FE
+        EQUB    $50,$FB,$8D,$E3,$FE,$4C,$36,$00
+        EQUB    $A2,$10,$20,$C5,$06,$95,$01,$CA
+        EQUB    $D0,$F8,$20,$82,$05,$86,$00,$84
+        EQUB    $01,$A0,$00,$20,$C5,$06,$20,$DD
+        EQUB    $FF,$20,$95,$06,$A2,$10,$B5,$01
+        EQUB    $20,$95,$06,$CA,$D0,$F8,$F0,$D5
+        EQUB    $A2,$0D,$20,$C5,$06,$95,$FF,$CA
+        EQUB    $D0,$F8,$20,$C5,$06,$A0,$00,$20
+        EQUB    $D1,$FF,$48,$A2,$0C,$B5,$00,$20
+        EQUB    $95,$06,$CA,$10,$F8,$68,$4C,$3A
+        EQUB    $05,$20,$C5,$06,$AA,$20,$C5,$06
+        EQUB    $20,$F4,$FF,$2C,$E2,$FE,$50
+
+.LBD94
+        EQUB    $FB,$8E,$E3,$FE,$4C,$36,$00,$20
+        EQUB    $C5,$06,$AA,$20,$C5,$06,$A8,$20
+        EQUB    $C5,$06,$20,$F4,$FF,$49,$9D,$F0
+        EQUB    $EB,$6A,$20,$95,$06,$2C,$E2,$FE
+        EQUB    $50,$FB,$8C,$E3,$FE,$70,$D5,$20
+        EQUB    $C5,$06,$A8,$2C,$E2,$FE,$10,$FB
+        EQUB    $AE,$E3,$FE,$CA,$30,$0F,$2C,$E2
+        EQUB    $FE,$10,$FB,$AD,$E3,$FE,$9D,$28
+        EQUB    $01,$CA,$10,$F2,$98,$A2,$28,$A0
+        EQUB    $01,$20,$F1,$FF,$2C,$E2,$FE,$10
+        EQUB    $FB,$AE,$E3,$FE,$CA,$30,$0E,$BC
+        EQUB    $28,$01,$2C,$E2,$FE,$50,$FB,$8C
+        EQUB    $E3,$FE,$CA,$10,$F2,$4C,$36,$00
+        EQUB    $A2,$04,$20,$C5,$06,$95,$00,$CA
+        EQUB    $10,$F8,$E8,$A0,$00,$8A,$20,$F1
+        EQUB    $FF,$90,$05,$A9,$FF,$4C,$9E,$05
+        EQUB    $A2,$00,$A9,$7F,$20,$95,$06,$BD
+        EQUB    $00,$07,$20,$95,$06,$E8,$C9,$0D
+        EQUB    $D0,$F5,$4C,$36,$00,$2C,$E2,$FE
+        EQUB    $50,$FB,$8D,$E3,$FE,$60,$2C,$E6
+        EQUB    $FE,$50,$FB,$8D,$E7,$FE,$60,$A5
+        EQUB    $FF,$38,$6A,$30,$0F,$48,$A9,$00
+        EQUB    $20,$BC,$06,$98,$20,$BC,$06,$8A
+        EQUB    $20,$BC,$06,$68,$2C,$E0,$FE,$50
+        EQUB    $FB,$8D,$E1,$FE,$60,$2C,$E2,$FE
+        EQUB    $10,$FB,$AD,$E3,$FE,$60
 
 .LBE62
         CMP     #$FE
@@ -11811,5 +10504,6 @@ LBE4A = LBE48+2
         RTS
 
 .BeebDisEndAddr
-SAVE "..\asm\anfs418.bin",BeebDisStartAddr,BeebDisEndAddr
 
+
+SAVE "../roms/anfs418.rom",BeebDisStartAddr,BeebDisEndAddr
