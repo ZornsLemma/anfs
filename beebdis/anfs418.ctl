@@ -45,6 +45,20 @@ stringz $b4fe
 entry pc
 stringz $b54a
 entry pc
+stringz $b7e2
+entry pc
+stringz $b81c
+entry pc
+stringz $b866
+entry pc
+stringz $ba14
+entry pc
+stringz $baaf
+entry pc
+stringz $bae3
+entry pc
+stringz $bbaa
+entry pc
 
 stringz $9249
 stringz $8fe9

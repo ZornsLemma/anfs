@@ -8,7 +8,6 @@ L0013   = $0013
 L0014   = $0014
 L0015   = $0015
 L0016   = $0016
-L0020   = $0020
 L0032   = $0032
 L0051   = $0051
 L0053   = $0053
@@ -16,12 +15,9 @@ L0054   = $0054
 L0055   = $0055
 L0056   = $0056
 L0064   = $0064
-L0065   = $0065
 L0069   = $0069
 L006E   = $006E
-L0070   = $0070
 L0073   = $0073
-L0074   = $0074
 L0081   = $0081
 L0096   = $0096
 L0098   = $0098
@@ -197,7 +193,6 @@ L0F14   = $0F14
 L0F16   = $0F16
 L0F2F   = $0F2F
 L0F30   = $0F30
-L0FA2   = $0FA2
 L0FC8   = $0FC8
 L0FDC   = $0FDC
 L0FDD   = $0FDD
@@ -244,19 +239,12 @@ L2020   = $2020
 L203A   = $203A
 L2065   = $2065
 L20EA   = $20EA
-L3A20   = $3A20
 L4E2F   = $4E2F
-L6441   = $6441
-L666F   = $666F
-L6966   = $6966
 L6D61   = $6D61
 L6F62   = $6F62
 L6F66   = $6F66
-L706F   = $706F
-L7075   = $7075
 L746F   = $746F
 L776F   = $776F
-L796C   = $796C
 LEA28   = $EA28
 LFE18   = $FE18
 LFE20   = $FE20
@@ -8518,13 +8506,10 @@ LB487 = LB485+2
         LDA     #$D4
         JSR     L96D1
 
-        ADC     #$74
-        ADC     L0020
-        ROR     L796C
-        BRK
-.LB7ED
-        EQUB    $B8
+        EQUS    "Write only",$00
 
+.LB7ED
+        CLV
         JSR     LB730
 
         BEQ     LB828
@@ -8555,12 +8540,7 @@ LB487 = LB485+2
         LDA     #$DF
         JSR     L96D1
 
-        EOR     L006E
-        JSR     L666F
-
-        JSR     L6966
-
-        JMP     (L0065)
+        EQUS    "End of file",$00
 
 .LB828
         LDA     L1000,Y
@@ -8605,16 +8585,8 @@ LB487 = LB485+2
         JSR     L96D1
 
 LB865 = LB863+2
-        LSR     L746F
-        JSR     L706F
+        EQUS    "Not open for update",$00
 
-        ADC     L006E
-        JSR     L6F66
-
-        JSR     L7075
-
-        ADC     (L0074,X)
-        ADC     L0000
 .LB87A
         AND     #$20
         BEQ     LB888
@@ -8903,9 +8875,9 @@ LB865 = LB863+2
         LDA     #$11
         JSR     L96D4
 
-        EOR     L0073
-        ADC     (L0070,X)
-        ADC     L0000
+        EQUS    "Escape",$00
+
+.LBA1B
         JSR     LBC44
 
         LDX     #$14
@@ -9023,8 +8995,9 @@ LB865 = LB863+2
         DEX
         JSR     L9145
 
-        JSR     L00A0
+        EQUS    ": ",$A0,$00
 
+.LBAB3
         JSR     LBC86
 
 .LBAB6
@@ -9065,18 +9038,12 @@ LB865 = LB863+2
         PHA
         JSR     L9145
 
-        ORA     L6441
-        ADC     L0073
-        JSR     L3A20
+        EQUS    $0D,"Address  : ",$A2,$0F,"h"
 
-        JSR     L0FA2
-
-        PLA
 .LBAF2
-        JSR     LBB03
+        EQUS    " ",$03,$BB,"8i",$00
 
-        SEC
-        ADC     #$00
+.LBAF8
         AND     #$0F
         DEX
         BPL     LBAF2
@@ -9226,11 +9193,7 @@ LB865 = LB863+2
         LDA     #$B7
         JSR     L96D4
 
-        ADC     L0074,X
-        ADC     #$64
-        ADC     L0020
-        ROR     L0069
-        JMP     (L0065)
+        EQUS    "Outside file",$00
 
 .LBBB7
         LDA     (L00AE),Y
