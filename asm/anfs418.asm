@@ -7841,7 +7841,9 @@ LAD43 = LAD41+2
 
         JSR     L9145
 
-        PLP
+        EQUB    $28,$3F,$2F
+
+.LB3CA
         NOP
         JSR     LB431
 

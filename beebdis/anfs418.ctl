@@ -37,6 +37,8 @@ byte $8f49
 
 string $b1ad 4
 byte $b1b7
+byte $b3c7 3
+entry pc
 
 stringz $9249
 stringz $8fe9
