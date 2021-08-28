@@ -3116,12 +3116,10 @@ L8F48 = L8F46+2
         RTS
 
 .L9286
-        BVC     L92A8
+        EQUB    $50
 
-        ORA     L0002
-        DEY
-        PHP
-        BPL     L9291
+        EQUB    $20,$05,$02,$88,$04,$08,$80,$10
+        EQUB    $01,$02
 
 .L9291
         STX     L00F2
@@ -3143,7 +3141,6 @@ L8F48 = L8F46+2
         LDX     #$04
 .L92A6
         LDA     L00AF,X
-.L92A8
         EOR     L00B3,X
         BNE     L92AF
 
@@ -3313,9 +3310,10 @@ L8F48 = L8F46+2
 L9380 = L937F+1
         JSR     L96B8
 
-        ADC     #$6E
-        BRK
-        EQUB    $20
+        EQUS    "string",$00
+
+.L938B
+        JSR     L9327
 
         TXA
         PHA
@@ -3336,9 +3334,8 @@ L9380 = L937F+1
         LDA     #$B0
         JSR     L96B8
 
-        ADC     L006E
-        ADC     (L006D,X)
-        ADC     L0000
+        EQUS    "rename",$00
+
 .L93AE
         STA     L0F05,X
         INX
