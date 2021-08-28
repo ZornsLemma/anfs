@@ -4,7 +4,6 @@ L0002   = $0002
 L0003   = $0003
 L0006   = $0006
 L000E   = $000E
-L000F   = $000F
 L0012   = $0012
 L0013   = $0013
 L0014   = $0014
@@ -184,8 +183,6 @@ L0E07   = $0E07
 L0E08   = $0E08
 L0E09   = $0E09
 L0E0A   = $0E0A
-L0E0B   = $0E0B
-L0E14   = $0E14
 L0E2F   = $0E2F
 L0E30   = $0E30
 L0E31   = $0E31
@@ -203,8 +200,6 @@ L0F07   = $0F07
 L0F08   = $0F08
 L0F09   = $0F09
 L0F0A   = $0F0A
-L0F0B   = $0F0B
-L0F0C   = $0F0C
 L0F0D   = $0F0D
 L0F0E   = $0F0E
 L0F10   = $0F10
@@ -260,14 +255,12 @@ L10D9   = $10D9
 L10F3   = $10F3
 L12AC   = $12AC
 L2020   = $2020
-L202E   = $202E
 L203A   = $203A
 L2061   = $2061
 L2065   = $2065
 L206F   = $206F
 L20EA   = $20EA
 L212E   = $212E
-L216F   = $216F
 L2E45   = $2E45
 L3127   = $3127
 L3A20   = $3A20
@@ -276,9 +269,7 @@ L4E2F   = $4E2F
 L6000   = $6000
 L60EA   = $60EA
 L616A   = $616A
-L616D   = $616D
 L616F   = $616F
-L6269   = $6269
 L6369   = $6369
 L6441   = $6441
 L656D   = $656D
@@ -4291,7 +4282,6 @@ L96B4 = L96B3+1
         JSR     LAF02
 
         LDY     #$02
-.L9951
         LDA     #$92
         STA     L0098
         STA     L0F02
@@ -5953,8 +5943,8 @@ LA220 = LA21E+2
         LDA     #$FE
         JSR     L96B8
 
-        ADC     L616D
-        ROR     L0064
+        EQUS    "command",$00
+
 .LA26A
         LDX     #$03
 .LA26C
@@ -5967,12 +5957,10 @@ LA220 = LA21E+2
         LDA     #$93
         JSR     L96D1
 
-        LSR     L216F
-        BRK
-.LA27D
-        EQUB    $AD
+        EQUS    "No!",$00
 
-        ORA     L000F
+.LA27D
+        LDA     L0F05
         JSR     LB509
 
         TAY
@@ -5983,65 +5971,23 @@ LA220 = LA21E+2
         JMP     LA3E8
 
 .LA291
-        JMP     L6269
+        EQUS    "Library."
 
-        ADC     (L0072,X)
-.LA297
-        ADC     L202E,Y
-LA299 = LA297+2
-        LDY     #$00
-        CLC
-        JSR     LFFC2
+.LA299
+        EQUS    " "
 
-.LA2A2
-        JSR     LFFC5
-
-        BCC     LA2A2
-
-        DEY
-.LA2A8
-        INY
-        LDA     (L00F2),Y
-        CMP     #$20
-        BEQ     LA2A8
-
-        EOR     #$0D
-        CLC
-        TYA
-        ADC     L00F2
-        STA     L0E0A
-        LDA     L00F3
-        ADC     #$00
-        STA     L0E0B
-        JSR     L8B02
-
-        LDX     #$0E
-        STX     L00BC
-        LDA     #$0E
-        STA     L00BB
-        STA     L0E14
-        LDX     #$4A
-        LDY     #$05
-        JSR     L9951
-
-        LDA     L0D63
-        BEQ     LA2EF
-
-        AND     L0F0B
-        AND     L0F0C
-        CMP     #$FF
-        BEQ     LA2EF
-
-        JSR     LA073
-
-        LDX     #$09
-        LDY     #$0F
-        LDA     #$04
-        JMP     L0406
-
-.LA2EF
-        LDA     #$01
-        JMP     (L0F09)
+        EQUB    $02,$AF,$A0,$00,$18,$20,$C2,$FF
+        EQUB    $20,$C5,$FF,$90,$FB,$88,$C8,$B1
+        EQUB    $F2,$C9,$20,$F0,$F9,$49,$0D,$18
+        EQUB    $98,$65,$F2,$8D,$0A,$0E,$A5,$F3
+        EQUB    $69,$00,$8D,$0B,$0E,$20,$02,$8B
+        EQUB    $A2,$0E,$86,$BC,$A9,$0E,$85,$BB
+        EQUB    $8D,$14,$0E,$A2,$4A,$A0,$05,$20
+        EQUB    $51,$99,$AD,$63,$0D,$F0,$16,$2D
+        EQUB    $0B,$0F,$2D,$0C,$0F,$C9,$FF,$F0
+        EQUB    $0C,$20,$73,$A0,$A2,$09,$A0,$0F
+        EQUB    $A9,$04,$4C,$06,$04,$A9,$01,$6C
+        EQUB    $09,$0F
 
 .LA2F4
         JSR     LA32B
