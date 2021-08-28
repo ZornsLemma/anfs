@@ -11,7 +11,6 @@ L0014   = $0014
 L0015   = $0015
 L0016   = $0016
 L0020   = $0020
-L0026   = $0026
 L0032   = $0032
 L0042   = $0042
 L0043   = $0043
@@ -269,7 +268,6 @@ L206F   = $206F
 L20EA   = $20EA
 L212E   = $212E
 L216F   = $216F
-L2322   = $2322
 L2E45   = $2E45
 L3127   = $3127
 L3A20   = $3A20
@@ -304,7 +302,6 @@ L7265   = $7265
 L726F   = $726F
 L7369   = $7369
 L7465   = $7465
-L746E   = $746E
 L746F   = $746F
 L7562   = $7562
 L776F   = $776F
@@ -5719,16 +5716,12 @@ L96B4 = L96B3+1
         LDA     #$DC
         JSR     L96D4
 
-        ADC     L746E,Y
-        ADC     (L0078,X)
-        BRK
+        EQUS    "Syntax",$00
+
 .LA133
-        EQUB    $A9
-
-        BRK
-        EQUB    $85
-
-        LDA     #$BD
+        LDA     #$00
+        STA     L00A9
+        LDA     LA3F2,X
         PHA
         LDA     LA3F1,X
         PHA
@@ -5788,15 +5781,12 @@ L96B4 = L96B3+1
         BNE     LA165
 
 .LA17C
-        JSR     L2322
+        EQUB    $20,$22,$23,$24,$26,$2A,$3A,$40
+        EQUB    $0D
 
-        BIT     L0026
-        ROL     A
-        RTI
-
-.LA184
-        ORA     LA868
-LA185 = LA184+1
+.LA185
+        PLA
+        TAY
 .LA187
         LDA     (L00BE),Y
         CMP     #$20
@@ -6383,7 +6373,6 @@ LA3DF = LA3DE+1
 
 .LA865
         LDA     L0D71
-.LA868
         CMP     #$FF
         BNE     LA8C4
 
