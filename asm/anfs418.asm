@@ -16,8 +16,6 @@ L0029   = $0029
 L002B   = $002B
 L0030   = $0030
 L0032   = $0032
-L0038   = $0038
-L003B   = $003B
 L003E   = $003E
 L0042   = $0042
 L0043   = $0043
@@ -27,7 +25,6 @@ L0053   = $0053
 L0054   = $0054
 L0055   = $0055
 L0056   = $0056
-L0061   = $0061
 L0063   = $0063
 L0064   = $0064
 L0065   = $0065
@@ -39,11 +36,10 @@ L0070   = $0070
 L0072   = $0072
 L0073   = $0073
 L0074   = $0074
-L0075   = $0075
 L0077   = $0077
 L0078   = $0078
 L0081   = $0081
-L008F   = $008F
+L0091   = $0091
 L0098   = $0098
 L0099   = $0099
 L009A   = $009A
@@ -278,7 +274,6 @@ L2029   = $2029
 L202E   = $202E
 L203A   = $203A
 L203E   = $203E
-L2042   = $2042
 L2061   = $2061
 L2065   = $2065
 L206F   = $206F
@@ -293,7 +288,6 @@ L2828   = $2828
 L2829   = $2829
 L2929   = $2929
 L293E   = $293E
-L2E34   = $2E34
 L2E45   = $2E45
 L3127   = $3127
 L3A20   = $3A20
@@ -301,11 +295,7 @@ L3C00   = $3C00
 L3C28   = $3C28
 L3C29   = $3C29
 L4520   = $4520
-L464E   = $464E
-L4A0D   = $4A0D
-L4CEA   = $4CEA
 L4E2F   = $4E2F
-L4E41   = $4E41
 L6000   = $6000
 L60EA   = $60EA
 L616A   = $616A
@@ -319,16 +309,13 @@ L636F   = $636F
 L6441   = $6441
 L6465   = $6465
 L6469   = $6469
-L6563   = $6563
 L656D   = $656D
 L6573   = $6573
 L6660   = $6660
 L666F   = $666F
-L6854   = $6854
 L6863   = $6863
 L6874   = $6874
 L694C   = $694C
-L6957   = $6957
 L6966   = $6966
 L696C   = $696C
 L6C43   = $6C43
@@ -341,27 +328,23 @@ L6E65   = $6E65
 L6E69   = $6E69
 L6E6F   = $6E6F
 L6F4E   = $6F4E
-L6F52   = $6F52
 L6F62   = $6F62
 L6F66   = $6F66
 L704F   = $704F
 L706F   = $706F
 L7075   = $7075
 L71AD   = $71AD
-L7261   = $7261
 L7265   = $7265
 L726F   = $726F
 L7270   = $7270
 L7320   = $7320
 L7369   = $7369
-L736C   = $736C
 L736F   = $736F
 L7453   = $7453
 L7465   = $7465
 L746E   = $746E
 L746F   = $746F
 L753C   = $753C
-L7544   = $7544
 L7562   = $7562
 L7573   = $7573
 L7765   = $7765
@@ -2203,8 +2186,9 @@ L8B63 = L8B61+2
 .L8BB6
         JSR     L9145
 
-        JSR     LA020
+        EQUS    "  ",$A0
 
+.L8BBC
         ORA     #$BD
         BEQ     L8B63
 
@@ -2253,9 +2237,11 @@ L8B63 = L8B61+2
         PHA
         JSR     L9145
 
-        PLP
-        LDY     #$00
+        EQUS    "(",$A0,$00
+
+.L8BFE
         LDX     #$D3
+
 .L8C00
         LDA     LA3F0,X
         BMI     L8C24
@@ -2388,16 +2374,10 @@ L8B63 = L8B61+2
 .L8C9F
         JSR     L9145
 
-        ORA     L6441
-        ROR     L0061,X
-        ROR     L6563
-        JSR     L464E
+        EQUS    $0D,"Advanced NFS 4.18",$0D,$EA,"L"
 
-        JSR     L2E34
+        EQUB    $F1,$8F
 
-        AND     (L0038),Y
-        ORA     L4CEA
-        SBC     (L008F),Y
 .L8CB9
         LDY     L00F4
         LDA     L0DF0,Y
@@ -2465,9 +2445,9 @@ L8B63 = L8B61+2
 
         ADC     #$20
         ROL     L6F62
-.L8D16
         ORA     LA8A4
-L8D17 = L8D16+1
+.L8D17
+        LDY     L00A8
         LDX     #$05
 .L8D1B
         LDA     (L00F2),Y
@@ -2496,147 +2476,38 @@ L8D17 = L8D16+1
         RTS
 
 .L8D38
-        ORA     L6854
-        ADC     L0020
-        ADC     (L0075,X)
-        PLA
-        JSR     L666F
+        EQUB    $0D
 
-        JSR     L4E41
-
-        LSR     L0053
-        JSR     L7261
-
-        ADC     L003B
-        ORA     L2042
-        ADC     L0072,X
-        ROR     L4A0D
-        JSR     L7544
+        EQUB    $54,$68,$65,$20,$61,$75,$74,$68
+        EQUB    $6F,$72,$73,$20,$6F,$66,$20,$41
+        EQUB    $4E,$46,$53,$20,$61,$72,$65,$3B
+        EQUB    $0D,$42,$20,$43,$6F,$63,$6B,$62
+        EQUB    $75,$72,$6E,$0D,$4A,$20,$44,$75
 
 .L8D61
-        ROR     L0D6E
-        JSR     L6F52
-
-        ADC     L0072
-        ROR     L4A0D
-        JSR     L6957
-
-        JMP     (L736C)
-
-        ORA     L9800
-        PHA
-        LDA     #$77
-        STA     L0E07
-        JSR     LFFF4
-
-        LDY     #$00
-        STY     L00B4
-        JSR     LB799
-
-        LDA     #$00
-        STA     L0E07
-        PLA
-        TAY
-        LDA     (L00BB),Y
-        JSR     L9258
-
-        BCC     L8DBC
-
-        JSR     L916E
-
-        BCS     L8DA7
-
-        STA     L0E01
-        JSR     L8E09
-
-        INY
-        JSR     L916E
-
-.L8DA7
-        BEQ     L8DBC
-
-        STA     L0E00
-        LDX     #$FF
-.L8DAE
-        INX
-        LDA     LA477,X
-        STA     L0F05,X
-        BPL     L8DAE
-
-        JSR     LAF06
-
-        BEQ     L8DBF
-
-.L8DBC
-        JSR     LAF02
-
-.L8DBF
-        LDY     #$FF
-.L8DC1
-        INY
-        LDA     L0F05,Y
-        CMP     #$0D
-        BEQ     L8DFA
-
-        CMP     #$3A
-        BNE     L8DC1
-
-        JSR     LFFEE
-
-        STY     L00B4
-.L8DD2
-        LDA     #$FF
-        STA     L0098
-        JSR     L9570
-
-        JSR     LFFE0
-
-        CMP     #$15
-        BNE     L8DEB
-
-        LDY     L00B4
-        BNE     L8DD2
-
-.L8DE4
-        CPY     L00B4
-        BEQ     L8DD2
-
-        DEY
-        BNE     L8DD2
-
-.L8DEB
-        CMP     #$7F
-        BEQ     L8DE4
-
-        STA     L0F05,Y
-        INY
-        CMP     #$0D
-        BNE     L8DD2
-
-        JSR     LFFE7
-
-.L8DFA
-        TYA
-        PHA
-        JSR     L9473
-
-        JSR     L9894
-
-        PLA
-        TAX
-        INX
-        LDY     #$00
-        BEQ     L8E24
-
-.L8E09
-        JSR     LA865
-
-        EOR     L0E01
-        BNE     L8E14
-
-        STA     L0E01
-.L8E14
-        RTS
+        EQUB    $6E,$6E,$0D,$42,$20,$52,$6F,$62
+        EQUB    $65,$72,$74,$73,$6F,$6E,$0D,$4A
+        EQUB    $20,$57,$69,$6C,$6C,$73,$0D,$00
+        EQUB    $98,$48,$A9,$77,$8D,$07,$0E,$20
+        EQUB    $F4,$FF,$A0,$00,$84,$B4,$20,$99
+        EQUB    $B7,$A9,$00,$8D,$07,$0E,$68,$A8
+        EQUB    $B1,$BB,$20,$58,$92,$90,$24,$20
+        EQUB    $6E,$91,$B0,$0A,$8D,$01,$0E,$20
+        EQUB    $09,$8E,$C8,$20,$6E,$91,$F0,$13
+        EQUB    $8D,$00,$0E,$A2,$FF,$E8,$BD,$77
+        EQUB    $A4,$9D,$05,$0F,$10,$F7,$20,$06
+        EQUB    $AF,$F0,$03,$20,$02,$AF,$A0,$FF
+        EQUB    $C8,$B9,$05,$0F,$C9,$0D,$F0,$31
+        EQUB    $C9,$3A,$D0,$F4,$20,$EE,$FF,$84
+        EQUB    $B4,$A9,$FF,$85,$98,$20,$70,$95
+        EQUB    $20,$E0,$FF,$C9,$15,$D0,$0B,$A4
+        EQUB    $B4,$D0,$EE,$C4,$B4,$F0,$EA,$88
+        EQUB    $D0,$E7,$C9,$7F,$F0,$F5,$99,$05
+        EQUB    $0F,$C8,$C9,$0D,$D0,$DB,$20,$E7
+        EQUB    $FF,$98,$48,$20,$73,$94,$20,$94
+        EQUB    $98,$68,$AA,$E8,$A0,$00,$F0,$1B
+        EQUB    $20,$65,$A8,$4D,$01,$0E,$D0,$03
+        EQUB    $8D,$01,$0E,$60
 
 .L8E15
         LDY     #$00
@@ -2961,10 +2832,10 @@ L8F48 = L8F46+2
         ROR     L7465
         JSR     L7573
 
+.L8FEF
         ADC     L2000
-.L8FF1
-        JSR     L9145
-
+L8FF1 = L8FEF+2
+        EOR     L0091
         EOR     L0063
         ROR     L7465
         JSR     L7453
@@ -4382,10 +4253,8 @@ L97B9 = L97B8+1
         ROR     LA500
         LSR     L206F
         ADC     L0070
-.L97FF
         JMP     (L2079)
 
-L9800 = L97FF+1
         ROR     L0072
         ADC     L7320
         ADC     (L0074,X)
@@ -4491,7 +4360,6 @@ L9800 = L97FF+1
 
         SBC     L0D3A,X
         ROL     LFF0D,X
-.L9894
         LDY     #$C0
         STY     L009A
         LDY     #$00
@@ -6601,27 +6469,24 @@ LA3DF = LA3DE+1
         EQUB    $69,$72,$81,$DC,$93,$45,$78,$81
         EQUB    $6A,$AD,$46,$6C,$69,$70,$80,$55
         EQUB    $A3,$46,$53,$8B,$7A,$A0,$49,$6E
-        EQUB    $66,$6F,$C3,$E5,$92
-
-.LA477
-        EQUB    $49,$20,$61,$6D,$C2,$78,$8D,$4C
-        EQUB    $63,$61,$74,$81,$5E,$AD,$4C,$65
-        EQUB    $78,$81,$64,$AD,$4C,$69,$62,$C5
-        EQUB    $E5,$92,$50,$61,$73,$73,$C7,$BB
-        EQUB    $8D,$52,$65,$6D,$6F,$76,$65,$C3
-        EQUB    $65,$AF,$52,$65,$6E,$61,$6D,$65
-        EQUB    $CA,$8A,$93,$57,$69,$70,$65,$81
-        EQUB    $58,$B3,$80,$14,$8E,$4E,$65,$74
-        EQUB    $80,$95,$8B,$55,$74,$69,$6C,$73
-        EQUB    $80,$91,$8B,$80,$48,$61,$6C,$74
-        EQUB    $FC,$20,$DF,$4A,$53,$52,$FC,$04
-        EQUB    $FB,$50,$65,$65,$6B,$FC,$01,$FE
-        EQUB    $50,$6F,$6B,$65,$FC,$02,$FD,$50
-        EQUB    $72,$6F,$63,$FC,$08,$F7,$55,$74
-        EQUB    $69,$6C,$73,$A9,$10,$EF,$80,$18
-        EQUB    $A5,$EF,$E9,$0D,$30,$2D,$C9,$07
-        EQUB    $B0,$29,$AA,$A0,$06,$B9,$A9,$00
-        EQUB    $48
+        EQUB    $66,$6F,$C3,$E5,$92,$49,$20,$61
+        EQUB    $6D,$C2,$78,$8D,$4C,$63,$61,$74
+        EQUB    $81,$5E,$AD,$4C,$65,$78,$81,$64
+        EQUB    $AD,$4C,$69,$62,$C5,$E5,$92,$50
+        EQUB    $61,$73,$73,$C7,$BB,$8D,$52,$65
+        EQUB    $6D,$6F,$76,$65,$C3,$65,$AF,$52
+        EQUB    $65,$6E,$61,$6D,$65,$CA,$8A,$93
+        EQUB    $57,$69,$70,$65,$81,$58,$B3,$80
+        EQUB    $14,$8E,$4E,$65,$74,$80,$95,$8B
+        EQUB    $55,$74,$69,$6C,$73,$80,$91,$8B
+        EQUB    $80,$48,$61,$6C,$74,$FC,$20,$DF
+        EQUB    $4A,$53,$52,$FC,$04,$FB,$50,$65
+        EQUB    $65,$6B,$FC,$01,$FE,$50,$6F,$6B
+        EQUB    $65,$FC,$02,$FD,$50,$72,$6F,$63
+        EQUB    $FC,$08,$F7,$55,$74,$69,$6C,$73
+        EQUB    $A9,$10,$EF,$80,$18,$A5,$EF,$E9
+        EQUB    $0D,$30,$2D,$C9,$07,$B0,$29,$AA
+        EQUB    $A0,$06,$B9,$A9,$00,$48
 
 .LA500
         EQUB    $B9,$ED,$00,$99,$A9,$00,$88,$D0
@@ -10504,6 +10369,4 @@ LBC28 = LBC26+2
         RTS
 
 .BeebDisEndAddr
-
-
 SAVE "../roms/anfs418.rom",BeebDisStartAddr,BeebDisEndAddr
