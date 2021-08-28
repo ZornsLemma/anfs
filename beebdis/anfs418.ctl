@@ -27,13 +27,16 @@ byte $a99e
 byte $aa3f
 byte $ac80
 byte $ac8c
-byte $b194
-byte $b1b9 3
+byte $b194 4
+;byte $b1b9 3
 byte $bc94
 byte $8d38
 byte $8e59
 byte $8e8a 2
 byte $8f49
+
+string $b1ad 4
+byte $b1b7
 
 stringz $9249
 stringz $8fe9
