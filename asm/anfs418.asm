@@ -11,7 +11,6 @@ L0015   = $0015
 L0016   = $0016
 L0020   = $0020
 L0032   = $0032
-L0042   = $0042
 L0043   = $0043
 L004F   = $004F
 L0051   = $0051
@@ -82,7 +81,6 @@ L00CC   = $00CC
 L00CD   = $00CD
 L00CF   = $00CF
 L00D0   = $00D0
-L00D7   = $00D7
 L00EF   = $00EF
 L00F0   = $00F0
 L00F1   = $00F1
@@ -260,8 +258,6 @@ L2061   = $2061
 L2065   = $2065
 L206F   = $206F
 L20EA   = $20EA
-L212E   = $212E
-L2E45   = $2E45
 L3127   = $3127
 L3A20   = $3A20
 L4520   = $4520
@@ -297,14 +293,9 @@ L746F   = $746F
 L7562   = $7562
 L776F   = $776F
 L796C   = $796C
-L7DFD   = $7DFD
-LCFDE   = $CFDE
 LD020   = $D020
-LD9FD   = $D9FD
 LE320   = $E320
 LEA28   = $EA28
-LFD21   = $FD21
-LFDD1   = $FDD1
 LFE18   = $FE18
 LFE20   = $FE20
 LFE30   = $FE30
@@ -338,8 +329,6 @@ LFFF1   = $FFF1
 LFFF4   = $FFF4
 LFFF6   = $FFF6
 LFFF7   = $FFF7
-LFFFC   = $FFFC
-LFFFD   = $FFFD
 LFFFF   = $FFFF
 
         org     $8000
@@ -3277,9 +3266,7 @@ L8F48 = L8F46+2
         LDA     L10D8
         BEQ     L9348
 
-.L937F
         LDA     L00FD
-L9380 = L937F+1
         JSR     L96B8
 
         EQUS    "string",$00
@@ -6145,14 +6132,13 @@ LA220 = LA21E+2
 .LA3CE
         RTS
 
-        JMP     L212E
+        EQUS    "L.!BOOT",$0D
 
-        ORA     L2E45
-        AND     (L0042,X)
-.LA3DE
-        ORA     LCFDE
-LA3DF = LA3DE+1
-        CMP     (L00D7),Y
+        EQUB    $45,$2E,$21,$42,$4F,$4F,$54,$0D
+
+.LA3DF
+        EQUB    $DE,$CF,$D1,$D7
+
 .LA3E3
         LDY     L0E05
         BEQ     LA3CE
@@ -6712,25 +6698,14 @@ LA900 = LA8FF+1
         RTS
 
 .LAAB1
-        STA     L0000
-        SBC     L7DFD,X
-        ROR     LFFFC,X
-        BRK
-        EQUB    $00
+        EQUB    $85
 
-        INC     L9380,X
-        SBC     LD9FD,X
-        DEC     LFFFC,X
-        INC     LFDD1,X
-        SBC     LFD21,X
-        SBC     LFFFD,X
-        DEX
-        CPX     L00F0
-        BNE     LAAEC
-
-        LDA     L00D0
-        ROR     A
-        BCS     LAAEC
+        EQUB    $00,$FD,$FD,$7D,$FC,$FF,$FF,$7E
+        EQUB    $FC,$FF,$FF,$00,$00,$FE,$80,$93
+        EQUB    $FD,$FD,$D9,$FC,$FF,$FF,$DE,$FC
+        EQUB    $FF,$FF,$FE,$D1,$FD,$FD,$21,$FD
+        EQUB    $FF,$FF,$FD,$FD,$FF,$FF,$CA,$E4
+        EQUB    $F0,$D0,$0F,$A5,$D0,$6A,$B0,$0A
 
 .LAAE2
         LDA     #$21
