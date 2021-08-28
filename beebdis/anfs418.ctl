@@ -97,6 +97,8 @@ stringz $ac15
 byte $ad1f
 byte $ad44
 byte $aefb
+byte $af2e
+byte $af3b
 
 ; SFTODO: L9145 prints out any following non-top-bit set characters, then it transfers control to the address following - if I read this correctly, the low byte of the 2-byte address it transfers control to has to have top bit set - really the disassembly needs to treat these as labels, but I am not doing this yet and just treating them as raw bytes - OK, I think it may infact just return control to the first high bit set
 

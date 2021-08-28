@@ -16,7 +16,6 @@ L0053   = $0053
 L0054   = $0054
 L0055   = $0055
 L0056   = $0056
-L0063   = $0063
 L0064   = $0064
 L0065   = $0065
 L0069   = $0069
@@ -25,7 +24,6 @@ L0070   = $0070
 L0072   = $0072
 L0073   = $0073
 L0074   = $0074
-L0078   = $0078
 L0081   = $0081
 L0096   = $0096
 L0098   = $0098
@@ -254,7 +252,6 @@ L3A20   = $3A20
 L4E2F   = $4E2F
 L6000   = $6000
 L60EA   = $60EA
-L616F   = $616F
 L6441   = $6441
 L6573   = $6573
 L666F   = $666F
@@ -274,8 +271,6 @@ L7465   = $7465
 L746F   = $746F
 L776F   = $776F
 L796C   = $796C
-LD020   = $D020
-LE320   = $E320
 LEA28   = $EA28
 LFE18   = $FE18
 LFE20   = $FE20
@@ -5668,7 +5663,6 @@ L96B4 = L96B3+1
 .LA125
         BVC     LA133
 
-.LA127
         LDA     #$DC
         JSR     L96D4
 
@@ -7212,10 +7206,11 @@ LAD43 = LAD41+2
 
 .LAF2B
         LDA     #$00
-.LAF2D
         RTS
 
-        JMP     L616F
+        EQUB    $4C
+
+        EQUB    $6F,$61,$64
 
 .LAF32
         LDA     L1071
@@ -7223,59 +7218,18 @@ LAD43 = LAD41+2
         STA     L1071
         RTS
 
-        ADC     L006E,X
-        LDX     #$00
-.LAF40
-        LDA     L0F05,X
-        BMI     LAF2D
+        EQUB    $52
 
-        BNE     LAF5C
-
-        LDY     L00BA
-        BMI     LAF5A
-
-        INY
-        TYA
-        AND     #$03
-        STA     L00BA
-        BEQ     LAF5A
-
-        JSR     L9145
-
-        JSR     LD020
-
-.LAF59
-        ORA     L00A9
-LAF5A = LAF59+1
-.LAF5B
-        ORA     LE320
-LAF5C = LAF5B+1
-        INX
-        BNE     LAF40
-
-        EOR     L0078
-        ADC     L0063
-        TYA
-        PHA
-        JSR     LAFC1
-
-        CMP     #$0D
-        BEQ     LAF72
-
-        JMP     LA127
-
-.LAF72
-        PLA
-        TAY
-        JSR     LAFB5
-
-        JSR     LAE94
-
-        JSR     LAF02
-
-        LDY     #$14
-        BIT     L9491
-        JMP     L94AE
+        EQUB    $75,$6E,$A2,$00,$BD,$05,$0F,$30
+        EQUB    $E8,$D0,$15,$A4,$BA,$30,$0F,$C8
+        EQUB    $98,$29,$03,$85,$BA,$F0,$07,$20
+        EQUB    $45,$91,$20,$20,$D0,$05,$A9,$0D
+        EQUB    $20,$E3,$FF,$E8,$D0,$DE,$45,$78
+        EQUB    $65,$63,$98,$48,$20,$C1,$AF,$C9
+        EQUB    $0D,$F0,$03,$4C,$27,$A1,$68,$A8
+        EQUB    $20,$B5,$AF,$20,$94,$AE,$20,$02
+        EQUB    $AF,$A0,$14,$2C,$91,$94,$4C,$AE
+        EQUB    $94
 
 .LAF85
         BIT     L9491
