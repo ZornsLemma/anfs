@@ -122,7 +122,6 @@ L04C7   = $04C7
 L04CE   = $04CE
 L0500   = $0500
 L0518   = $0518
-L058D   = $058D
 L059C   = $059C
 L0600   = $0600
 L0630   = $0630
@@ -130,7 +129,6 @@ L0695   = $0695
 L069E   = $069E
 L06A7   = $06A7
 L09A0   = $09A0
-L09AE   = $09AE
 L0A0E   = $0A0E
 L0AD0   = $0AD0
 L0CFF   = $0CFF
@@ -297,6 +295,7 @@ L6573   = $6573
 L666F   = $666F
 L6863   = $6863
 L6874   = $6874
+L6920   = $6920
 L694C   = $694C
 L6966   = $6966
 L696C   = $696C
@@ -315,7 +314,6 @@ L726F   = $726F
 L7270   = $7270
 L7320   = $7320
 L7369   = $7369
-L736F   = $736F
 L7465   = $7465
 L746E   = $746E
 L746F   = $746F
@@ -328,7 +326,6 @@ LD020   = $D020
 LD9FD   = $D9FD
 LE320   = $E320
 LEA28   = $EA28
-LF028   = $F028
 LFD21   = $FD21
 LFDD1   = $FDD1
 LFE18   = $FE18
@@ -410,9 +407,8 @@ L8004 = L8003+1
 
 .L8074
         BIT     LFE18
-L8076 = L8074+2
-        JSR     L8969
-
+.L8076
+        INC     L6920,X
         LDA     #$EA
         LDX     #$00
         STX     L0D62
@@ -3424,15 +3420,11 @@ L9380 = L937F+1
         LDA     #$D6
         JSR     L96D1
 
-        LSR     L746F
-        JSR     L6F66
+        EQUS    "Not found",$00
 
-        ADC     L006E,X
-        BRK
 .L943C
-        EQUB    $AD
-
-        ASL     L058D
+        LDA     L0E03
+        STA     L0F05
         LDX     #$01
         LDY     #$07
         JSR     L94AD
@@ -3619,14 +3611,13 @@ L9380 = L937F+1
 
         JSR     L9145
 
-        ADC     (L0074,X)
-        ADC     (L0020,X)
-        JMP     L736F
+        EQUS    "Data Lost",$0D
 
-.L9546
-        ORA     L09AE
-L9547 = L9546+1
-        ASL     LF028
+.L9547
+        LDX     L0E09
+        PLP
+        BEQ     L9551
+
         PLA
         PLA
         PLA
