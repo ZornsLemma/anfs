@@ -3692,14 +3692,11 @@ L9380 = L937F+1
         LDA     #$00
         JSR     L96D1
 
-        ADC     L006D
-        ADC     L0064
-        BRK
-        EQUB    $A0
+        EQUS    "Remoted",$00
 
-        BRK
-        EQUB    $B1
-
+.L95BE
+        LDY     #$00
+        LDA     (L009C),Y
         BEQ     L9589
 
         LDY     #$80
