@@ -39,7 +39,6 @@ L0074   = $0074
 L0077   = $0077
 L0078   = $0078
 L0081   = $0081
-L0091   = $0091
 L0098   = $0098
 L0099   = $0099
 L009A   = $009A
@@ -340,13 +339,11 @@ L7270   = $7270
 L7320   = $7320
 L7369   = $7369
 L736F   = $736F
-L7453   = $7453
 L7465   = $7465
 L746E   = $746E
 L746F   = $746F
 L753C   = $753C
 L7562   = $7562
-L7573   = $7573
 L7765   = $7765
 L776F   = $776F
 L796C   = $796C
@@ -2828,21 +2825,15 @@ L8F48 = L8F46+2
         LDA     #$AA
         JSR     L96B8
 
-        ROR     L7465
-        JSR     L7573
+        EQUS    "net sum",$00
 
-.L8FEF
-        ADC     L2000
-L8FF1 = L8FEF+2
-        EOR     L0091
-        EOR     L0063
-        ROR     L7465
-        JSR     L7453
+.L8FF1
+        JSR     L9145
 
-        ADC     (L0074,X)
-        ADC     #$6F
-        ROR     LA020
-        ORA     (L00B1,X)
+        EQUS    $91,"Econet Station ",$A0,$01
+
+.L9005
+        LDA     (L009C),Y
         JSR     LAF85
 
         LDA     #$20
@@ -5741,9 +5732,7 @@ L97B9 = L97B8+1
         LDA     (L00BB),Y
         STA     L0F07
         LDX     #$0D
-.LA01F
         STX     L0F08
-LA020 = LA01F+1
         LDY     #$02
         STY     L00B0
         STY     L0F05
@@ -7237,7 +7226,9 @@ LAC10 = LAC0E+2
         ADC     L656D
         BRK
 .LAC24
-        STX     L009A
+        EQUB    $86
+
+        TXS
         STY     L009B
         PHA
         ORA     #$00
