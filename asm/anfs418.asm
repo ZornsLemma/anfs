@@ -149,7 +149,6 @@ L0D2E   = $0D2E
 L0D2F   = $0D2F
 L0D30   = $0D30
 L0D31   = $0D31
-L0D3A   = $0D3A
 L0D3E   = $0D3E
 L0D3F   = $0D3F
 L0D40   = $0D40
@@ -335,7 +334,6 @@ LFEE2   = $FEE2
 LFEE3   = $FEE3
 LFEE5   = $FEE5
 LFEE6   = $FEE6
-LFF0D   = $FF0D
 LFFB9   = $FFB9
 LFFBD   = $FFBD
 LFFC2   = $FFC2
@@ -4142,16 +4140,12 @@ L96B4 = L96B3+1
         JMP     L929F
 
 .L9888
-        DEY
-        BRK
-        EQUB    $FD
+        EQUB    $88,$00,$FD,$FD,$3A,$0D,$FF,$FF
+        EQUB    $3E,$0D,$FF,$FF,$A0,$C0,$84,$9A
+        EQUB    $A0
 
-        SBC     L0D3A,X
-        ROL     LFF0D,X
-        LDY     #$C0
-        STY     L009A
-        LDY     #$00
-        STY     L009B
+        EQUB    $00,$84,$9B
+
 .L989C
         LDY     #$0B
 .L989E
