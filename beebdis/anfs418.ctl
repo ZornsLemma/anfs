@@ -39,6 +39,10 @@ string $b1ad 4
 byte $b1b7
 byte $b3c7 3
 entry pc
+string $b488 37
+entry pc
+stringz $b4fe
+entry pc
 
 stringz $9249
 stringz $8fe9

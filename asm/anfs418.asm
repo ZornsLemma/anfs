@@ -21,7 +21,6 @@ L0065   = $0065
 L0069   = $0069
 L006E   = $006E
 L0070   = $0070
-L0072   = $0072
 L0073   = $0073
 L0074   = $0074
 L0081   = $0081
@@ -244,27 +243,20 @@ L10D9   = $10D9
 L10F3   = $10F3
 L2020   = $2020
 L203A   = $203A
-L2061   = $2061
 L2065   = $2065
 L206F   = $206F
 L20EA   = $20EA
 L3A20   = $3A20
 L4E2F   = $4E2F
-L6000   = $6000
 L6441   = $6441
 L666F   = $666F
-L6863   = $6863
-L6874   = $6874
 L6966   = $6966
-L6C65   = $6C65
 L6D61   = $6D61
-L6E6F   = $6E6F
 L6F62   = $6F62
 L6F66   = $6F66
 L706F   = $706F
 L7075   = $7075
 L726F   = $726F
-L7465   = $7465
 L746F   = $746F
 L776F   = $776F
 L796C   = $796C
@@ -7992,30 +7984,10 @@ LAD43 = LAD41+2
         JSR     L96D1
 
 LB487 = LB485+2
-        LSR     L7465
-        JSR     L6863
+        EQUS    "Net channel",$00," not on this file server",$00
 
-        ADC     (L006E,X)
-        ROR     L6C65
-        BRK
-        EQUB    $20
-
-        ROR     L746F
-        JSR     L6E6F
-
-        JSR     L6874
-
-        ADC     #$73
-        JSR     L6966
-
-        JMP     (L2065)
-
-        ADC     L0072
-        ROR     L0065,X
-        BRK
 .LB4AD
-        EQUB    $48
-
+        PHA
         SEC
         SBC     #$20
         TAX
@@ -8070,13 +8042,11 @@ LB487 = LB485+2
         LDA     #$A8
         JSR     L96D1
 
-        EOR     #$73
-        JSR     L2061
+        EQUS    "Is a dir.",$00
 
-        ADC     #$72
-.LB506
-        ROL     L6000
-LB508 = LB506+2
+.LB508
+        RTS
+
 .LB509
         PHA
         LDX     #$20
