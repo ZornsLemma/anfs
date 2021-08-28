@@ -40,6 +40,8 @@ byte $8f49
 
 string $8d0f 7
 entry $be62
+string $b0b1 4
+entry pc
 
 string $b1ad 4
 byte $b1b7
@@ -135,6 +137,7 @@ byte $aefb
 byte $af2e
 byte $af3b
 string $b0a5 6
+entry pc
 string $b0d2 7
 entry pc
 string $b0dd 11

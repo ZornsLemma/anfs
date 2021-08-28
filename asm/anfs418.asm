@@ -220,10 +220,8 @@ L10F3   = $10F3
 L2020   = $2020
 L203A   = $203A
 L2065   = $2065
-L20EA   = $20EA
 L4E2F   = $4E2F
 L6D61   = $6D61
-L776F   = $776F
 LEA28   = $EA28
 LFE18   = $FE18
 LFE20   = $FE20
@@ -5495,6 +5493,7 @@ L96B4 = L96B3+1
 .LA09B
         JSR     LB0C5
 
+.LA09E
         BIT     L9491
         JSR     LB198
 
@@ -7401,15 +7400,20 @@ LAD43 = LAD41+2
 
         EQUS    "still "
 
-        EQUB    $B8,$50,$08
+.LB0AB
+        CLV
+        BVC     LB0B6
 
 .LB0AE
         JSR     L9145
 
-        ROR     L776F
-        JSR     L20EA
+        EQUS    "now "
 
-        LDY     #$A0
+.LB0B5
+        NOP
+.LB0B6
+        JSR     LA09E
+
 .LB0B9
         LDY     #$02
         LDA     L00B5
