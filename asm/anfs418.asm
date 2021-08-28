@@ -14,10 +14,7 @@ L0053   = $0053
 L0054   = $0054
 L0055   = $0055
 L0056   = $0056
-L0064   = $0064
 L0069   = $0069
-L006E   = $006E
-L0073   = $0073
 L0081   = $0081
 L0096   = $0096
 L0098   = $0098
@@ -242,8 +239,6 @@ L20EA   = $20EA
 L4E2F   = $4E2F
 L6D61   = $6D61
 L6F62   = $6F62
-L6F66   = $6F66
-L746F   = $746F
 L776F   = $776F
 LEA28   = $EA28
 LFE18   = $FE18
@@ -9267,15 +9262,11 @@ LB865 = LB863+2
         LDA     #$FC
         JSR     L96B8
 
-        ADC     (L0064,X)
-        ADC     L0073
-        BRK
+        EQUS    "address",$00
+
 .LBC1F
-        EQUB    $A0
-
-        BRK
-        EQUB    $A2
-
+        LDY     #$00
+        LDX     #$04
         CLC
 .LBC24
         LDA     (L00AE),Y
@@ -9322,14 +9313,10 @@ LB865 = LB863+2
         LDA     #$D6
         JSR     L96D4
 
-        LSR     L746F
-        JSR     L6F66
+        EQUS    "Not found",$00
 
-        ADC     L006E,X
-        BRK
 .LBC6A
-        EQUB    $68
-
+        PLA
         STA     L00F3
         PLA
         STA     L00F2

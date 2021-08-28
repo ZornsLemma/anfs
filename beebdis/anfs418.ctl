@@ -59,6 +59,10 @@ stringz $bae3
 entry pc
 stringz $bbaa
 entry pc
+stringz $bc17
+entry pc
+stringz $bc60
+entry pc
 
 stringz $9249
 stringz $8fe9
