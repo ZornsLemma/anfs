@@ -251,9 +251,7 @@ L20EA   = $20EA
 L3A20   = $3A20
 L4E2F   = $4E2F
 L6000   = $6000
-L60EA   = $60EA
 L6441   = $6441
-L6573   = $6573
 L666F   = $666F
 L6863   = $6863
 L6874   = $6874
@@ -266,7 +264,6 @@ L6F66   = $6F66
 L706F   = $706F
 L7075   = $7075
 L726F   = $726F
-L7369   = $7369
 L7465   = $7465
 L746F   = $746F
 L776F   = $776F
@@ -7458,22 +7455,19 @@ LAD43 = LAD41+2
 
         JSR     L9145
 
-        ADC     #$6C
-        JMP     (LB820)
+        EQUS    "still "
 
-        BVC     LB0B6
+        EQUB    $B8,$50,$08
 
 .LB0AE
         JSR     L9145
 
         ROR     L776F
-.LB0B4
         JSR     L20EA
 
-LB0B6 = LB0B4+2
-.LB0B8
         LDY     #$A0
-LB0B9 = LB0B8+1
+.LB0B9
+        LDY     #$02
         LDA     L00B5
         STA     (L009E),Y
         INY
@@ -7492,20 +7486,18 @@ LB0B9 = LB0B8+1
 .LB0CF
         JSR     L9145
 
-        BVC     LB146
+        EQUS    "Printer"
 
-        ADC     #$6E
-        ADC     L0072
+.LB0D9
         NOP
 .LB0DA
         JSR     L9145
 
-        JSR     L6573
+        EQUS    " server is "
 
-        ROR     L0065,X
-        JSR     L7369
-
-        JSR     L60EA
+.LB0E8
+        NOP
+        RTS
 
 .LB0EA
         LDY     #$02
@@ -7574,7 +7566,6 @@ LB0B9 = LB0B8+1
 
 .LB144
         ASL     L0D61
-LB146 = LB144+2
         LDA     L00AB
         PHA
         LDA     L00AA
@@ -8605,10 +8596,8 @@ LB508 = LB506+2
         JSR     L96D1
 
         EOR     L006E
-.LB81F
         JSR     L666F
 
-LB820 = LB81F+1
         JSR     L6966
 
         JMP     (L0065)
