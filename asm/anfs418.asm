@@ -264,11 +264,9 @@ L4520   = $4520
 L4E2F   = $4E2F
 L6000   = $6000
 L60EA   = $60EA
-L616A   = $616A
 L616F   = $616F
 L6369   = $6369
 L6441   = $6441
-L656D   = $656D
 L6573   = $6573
 L666F   = $666F
 L6863   = $6863
@@ -290,7 +288,6 @@ L726F   = $726F
 L7369   = $7369
 L7465   = $7465
 L746F   = $746F
-L7562   = $7562
 L776F   = $776F
 L796C   = $796C
 LD020   = $D020
@@ -329,7 +326,6 @@ LFFF1   = $FFF1
 LFFF4   = $FFF4
 LFFF6   = $FFF6
 LFFF7   = $FFF7
-LFFFF   = $FFFF
 
         org     $8000
 .L8000
@@ -6407,9 +6403,7 @@ LA8A4 = LA8A3+1
         LDY     #$02
         LDA     #$90
         STA     L0098
-.LA8FF
         STA     (L00AC),Y
-LA900 = LA8FF+1
         INY
         INY
 .LA903
@@ -6905,29 +6899,16 @@ LA900 = LA8FF+1
         LDA     #$A6
         JSR     L96D1
 
-        BVC     LAC77
+        EQUS    "Printer busy",$00
 
-        ADC     #$6E
-        ADC     L0072
-        JSR     L7562
-
-.LAC0E
-        ADC     LA900,Y
-LAC10 = LAC0E+2
+.LAC10
+        LDA     #$A7
         JSR     L96D1
 
-        BVC     LAC89
+        EQUS    "Printer jammed",$00
 
-        ADC     #$6E
-        ADC     L0072
-        JSR     L616A
-
-        ADC     L656D
-        BRK
 .LAC24
-        EQUB    $86
-
-        TXS
+        STX     L009A
         STY     L009B
         PHA
         ORA     #$00
@@ -6988,7 +6969,6 @@ LAC10 = LAC0E+2
         JSR     L95DD
 
         PLA
-.LAC77
         PHA
         EOR     (L009A),Y
         ROR     A
@@ -7002,9 +6982,8 @@ LAC10 = LAC0E+2
         EQUB    $80
 
         EQUB    $9F,$00,$00,$59,$8E,$FF,$FF,$61
+        EQUB    $8E,$FF,$FF
 
-.LAC89
-        STX     LFFFF
 .LAC8C
         EQUB    $7F
 
