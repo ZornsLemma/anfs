@@ -6944,48 +6944,20 @@ L96B4 = L96B3+1
         RTS
 
 .LAD0D
-        STY     L00C2
-        TYA
-        PHA
-        JSR     LAF32
+        EQUB    $84
 
-        JSR     LAFC1
-
-        CMP     #$0D
-        BNE     LAD20
-
-        LDX     #$02
-        BNE     LAD2F
+        EQUB    $C2,$C3,$98,$48,$20,$32,$AF,$20
+        EQUB    $C1,$AF,$C9,$0D,$D0,$04,$A2,$02
+        EQUB    $D0
 
         EQUB    $0F
 
-.LAD20
-        LDA     #$FF
-        STA     L00B4
-        JSR     L916E
+        EQUB    $A9,$FF,$85,$B4,$20,$6E,$91,$A2
+        EQUB    $1B,$CA,$DD,$43,$AD,$90,$FA,$8E
+        EQUB    $05,$0F,$68,$A8,$20,$B5,$AF,$20
+        EQUB    $94,$AE,$A2,$01,$20,$04,$AF,$A0
+        EQUB    $1B,$4C,$AD,$94
 
-        LDX     #$1B
-.LAD29
-        DEX
-        CMP     LAD43,X
-        BCC     LAD29
-
-.LAD2F
-        STX     L0F05
-        PLA
-        TAY
-        JSR     LAFB5
-
-        JSR     LAE94
-
-        LDX     #$01
-        JSR     LAF04
-
-        LDY     #$1B
-.LAD41
-        JMP     L94AD
-
-LAD43 = LAD41+2
         EQUB    $00
 
         EQUB    $0A,$14,$1D,$27,$31,$3B,$45,$4F
@@ -7222,7 +7194,6 @@ LAD43 = LAD41+2
 
 .LAFC0
         INY
-.LAFC1
         LDA     (L00BE),Y
         CMP     #$20
         BEQ     LAFCD
