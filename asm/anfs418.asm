@@ -13,7 +13,6 @@ L0016   = $0016
 L0020   = $0020
 L0026   = $0026
 L002B   = $002B
-L0030   = $0030
 L0032   = $0032
 L0042   = $0042
 L0043   = $0043
@@ -303,7 +302,6 @@ L6966   = $6966
 L696C   = $696C
 L6C65   = $6C65
 L6D61   = $6D61
-L6E20   = $6E20
 L6E69   = $6E69
 L6E6F   = $6E6F
 L6F62   = $6F62
@@ -327,7 +325,6 @@ L796C   = $796C
 L7DFD   = $7DFD
 LCFDE   = $CFDE
 LD020   = $D020
-LD0A9   = $D0A9
 LD9FD   = $D9FD
 LE320   = $E320
 LEA28   = $EA28
@@ -3045,56 +3042,35 @@ L8F48 = L8F46+2
         LDA     #$F1
         JSR     L96B8
 
-        PLA
-        ADC     L0078
-        BRK
+        EQUS    "hex",$00
+
 .L9211
-        EQUB    $24
+        BIT     L00B4
+        BMI     L9235
 
-        LDY     L0030,X
-.L9214
-        JSR     LD0A9
-
-L9215 = L9214+1
+.L9215
+        LDA     #$D0
         JSR     L96B8
 
-        ADC     (L0074,X)
-        ADC     #$6F
-        ROR     L6E20
-        ADC     L006D,X
-        ADC     L0072
-        BRK
+        EQUS    "station number",$00
+
 .L9229
-        EQUB    $A9
+        LDA     #$F0
+        JSR     L96B8
 
-        BEQ     L924C
+        EQUS    "number",$00
 
-        CLV
-        STX     L006E,Y
-        ADC     L006D,X
-        ADC     L0072
-        BRK
 .L9235
-        EQUB    $A9
+        LDA     #$94
+        JSR     L96B8
 
-        STY     L0020,X
-        CLV
-        STX     L0070,Y
-        ADC     (L0072,X)
-        ADC     (L006D,X)
-        ADC     L0074
-        ADC     L0072
-        BRK
+        EQUS    "parameter",$00
+
 .L9244
-        EQUB    $A9
+        LDA     #$D1
+        JSR     L96B8
 
-        CMP     (L0020),Y
-        CLV
-        STX     L006E,Y
-        EQUS    "net"
-
-.L924C
-        EQUS    "work number",$00
+        EQUS    "network number",$00
 
 .L9258
         CMP     #$26
