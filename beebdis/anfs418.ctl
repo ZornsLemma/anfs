@@ -43,6 +43,8 @@ string $b488 37
 entry pc
 stringz $b4fe
 entry pc
+stringz $b54a
+entry pc
 
 stringz $9249
 stringz $8fe9
