@@ -31,6 +31,9 @@ byte $b194
 byte $b1b9 3
 byte $bc94
 byte $8d38
+byte $8e59
+byte $8e8a 2
+byte $8f49
 
 stringz $9249
 

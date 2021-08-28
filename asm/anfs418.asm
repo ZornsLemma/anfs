@@ -2563,10 +2563,9 @@ L8E54 = L8E52+2
 .L8E58
         RTS
 
-        BVC     L8EAD
+        EQUB    $50
 
-        EOR     #$4E
-        JSR     L0001
+        EQUB    $52,$49,$4E,$54,$20,$01,$00
 
 .L8E61
         EQUB    $1B
@@ -2581,18 +2580,17 @@ L8E54 = L8E52+2
         LDX     #$00
 .L8E85
         LDY     #$FF
+.L8E87
         JMP     LFFF4
 
-.L8E8B
-        LDA     #$A2
-L8E8C = L8E8B+1
-        BRK
-        EQUB    $A0
+        EQUB    $7A,$A9
 
-        BRK
-        EQUB    $F0
+.L8E8C
+        LDX     #$00
+        LDY     #$00
+        BEQ     L8E87
 
-        SBC     L00A5,X
+        LDA     L00EF
         SBC     #$31
         CMP     #$04
         BCS     L8EAB
@@ -2613,7 +2611,6 @@ L8E8C = L8E8B+1
 
 .L8EAC
         TYA
-.L8EAD
         CMP     #$21
         BCC     L8EB3
 
@@ -2711,8 +2708,10 @@ L8E8C = L8E8B+1
         JMP     L9215
 
 L8F48 = L8F46+2
-        PLP
-        ASL     A
+        EQUB    $FF
+
+        EQUB    $28,$0A
+
 .L8F4C
         INY
         BEQ     L8F46
@@ -10369,4 +10368,5 @@ LBC28 = LBC26+2
         RTS
 
 .BeebDisEndAddr
-SAVE "../roms/anfs418.rom",BeebDisStartAddr,BeebDisEndAddr
+SAVE "..\asm\anfs418.bin",BeebDisStartAddr,BeebDisEndAddr
+
