@@ -12,7 +12,7 @@ byte pc ; binary version
 stringz pc ; title
 stringz pc ; copyright
 
-byte $8488
+;byte $84f5
 byte $853e
 byte $8681
 byte $89ca
@@ -158,3 +158,6 @@ entry pc
 string $8bff
 
 string $8ca2 21
+
+byte $8488 6
+entry pc

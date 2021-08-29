@@ -113,6 +113,7 @@ L0D2E   = $0D2E
 L0D2F   = $0D2F
 L0D30   = $0D30
 L0D31   = $0D31
+L0D32   = $0D32
 L0D3E   = $0D3E
 L0D3F   = $0D3F
 L0D40   = $0D40
@@ -126,6 +127,7 @@ L0D62   = $0D62
 L0D63   = $0D63
 L0D64   = $0D64
 L0D65   = $0D65
+L0D66   = $0D66
 L0D68   = $0D68
 L0D69   = $0D69
 L0D6A   = $0D6A
@@ -963,22 +965,64 @@ LFFF7   = $FFF7
 .L8485
         JMP     L8236
 
-        EQUB    $CA
+        EQUB    $CA,$AD,$8F,$8F,$8F,$E4
 
-        EQUB    $AD,$8F,$8F,$8F,$E4,$E4,$B8,$A9
-        EQUB    $00,$85,$A4,$A9,$82,$85,$A2,$A9
-        EQUB    $01,$85,$A3,$A5,$9D,$85,$A5,$A0
-        EQUB    $01,$B9,$32,$0D,$99,$66,$0D,$88
-        EQUB    $10,$F7,$4C,$CC,$81,$A9,$2E,$85
-        EQUB    $A6,$A9,$0D,$85,$A7,$4C,$BA,$81
-        EQUB    $A9,$01,$85,$A3,$A9,$FC,$85,$A2
-        EQUB    $A9,$CB,$85,$A4,$A9,$88,$85,$A5
-        EQUB    $D0,$12,$A9,$2E,$85,$A6,$A9,$0D
-        EQUB    $85,$A7,$A9,$02,$8D,$40,$0D,$20
-        EQUB    $F2,$88,$90,$4F,$AD,$3E,$0D,$09
-        EQUB    $80,$8D,$3E,$0D,$A9,$44,$8D,$A0
-        EQUB    $FE,$A9,$A7,$8D,$A1,$FE,$A9,$0C
-        EQUB    $A0,$85,$4C,$08,$83
+.L848E
+        CPX     L00B8
+        LDA     #$00
+        STA     L00A4
+        LDA     #$82
+        STA     L00A2
+        LDA     #$01
+        STA     L00A3
+        LDA     L009D
+        STA     L00A5
+        LDY     #$01
+.L84A2
+        LDA     L0D32,Y
+        STA     L0D66,Y
+        DEY
+        BPL     L84A2
+
+        JMP     L81CC
+
+        LDA     #$2E
+        STA     L00A6
+        LDA     #$0D
+        STA     L00A7
+        JMP     L81BA
+
+        LDA     #$01
+        STA     L00A3
+        LDA     #$FC
+        STA     L00A2
+        LDA     #$CB
+        STA     L00A4
+        LDA     #$88
+        STA     L00A5
+        BNE     L84DD
+
+        LDA     #$2E
+        STA     L00A6
+        LDA     #$0D
+        STA     L00A7
+        LDA     #$02
+        STA     L0D40
+        JSR     L88F2
+
+        BCC     L852C
+
+.L84DD
+        LDA     L0D3E
+        ORA     #$80
+        STA     L0D3E
+        LDA     #$44
+        STA     LFEA0
+        LDA     #$A7
+        STA     LFEA1
+        LDA     #$0C
+        LDY     #$85
+        JMP     L8308
 
 .L84F6
         LDA     L00A2
@@ -1005,6 +1049,7 @@ LFFF7   = $FFF7
         ORA     #$08
         STA     LFE4B
         BIT     LFE4A
+.L852C
         JMP     L83F8
 
 .L852F
