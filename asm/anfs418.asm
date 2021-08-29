@@ -3,9 +3,17 @@ L0001   = $0001
 L0002   = $0002
 L0003   = $0003
 L0006   = $0006
+L0012   = $0012
+L0013   = $0013
+L0014   = $0014
 L0015   = $0015
 L0016   = $0016
+L0032   = $0032
 L0051   = $0051
+L0053   = $0053
+L0054   = $0054
+L0055   = $0055
+L0056   = $0056
 L0069   = $0069
 L0081   = $0081
 L0096   = $0096
@@ -87,11 +95,18 @@ L02A0   = $02A0
 L0355   = $0355
 L0400   = $0400
 L0406   = $0406
+L0414   = $0414
 L0421   = $0421
+L0484   = $0484
+L04C7   = $04C7
+L04CE   = $04CE
 L0500   = $0500
+L0518   = $0518
+L059C   = $059C
 L0600   = $0600
 L0695   = $0695
 L069E   = $069E
+L06A7   = $06A7
 L09A0   = $09A0
 L0A0E   = $0A0E
 L0CFF   = $0CFF
@@ -242,6 +257,7 @@ LFEE1   = $FEE1
 LFEE2   = $FEE2
 LFEE3   = $FEE3
 LFEE5   = $FEE5
+LFEE6   = $FEE6
 LFFB9   = $FFB9
 LFFBD   = $FFBD
 LFFC2   = $FFC2
@@ -260,11 +276,18 @@ LFFF7   = $FFF7
 
         org     $8000
 .L8000
-        EQUS    $00,"BC"
+        EQUS    $00
+
+.L8001
+        EQUS    "B"
+
+.L8002
+        EQUS    "C"
 
 .header_service_entry
         JMP     L8A15
 
+L8004 = header_service_entry+1
 .L8006
         EQUB    $82
 
@@ -9549,38 +9572,188 @@ LB865 = LB863+2
         EQUB    $00
 
 .LBF04
-        EQUB    $4C,$84,$04,$4C,$A7,$06,$C9,$80
-        EQUB    $90,$2B,$C9,$C0,$B0,$1A,$09,$40
-        EQUB    $C5,$15,$D0,$20,$08,$78,$A9,$05
-        EQUB    $20,$9E,$06,$A5,$15,$20,$9E,$06
-        EQUB    $28,$A9,$80,$85,$15,$85,$14,$60
-        EQUB    $06,$14,$B0,$06,$C5,$15,$F0,$04
-        EQUB    $18,$60,$85,$15,$60,$08,$78,$84
-        EQUB    $13,$86,$12,$20,$9E,$06,$AA,$A0
-        EQUB    $03,$A5,$15,$20,$9E,$06,$B1,$12
-        EQUB    $20,$9E,$06,$88,$10,$F8,$A0,$18
-        EQUB    $8C,$E0,$FE,$BD,$18,$05,$8D,$E0
-        EQUB    $FE,$4A,$4A,$90,$06,$2C,$E5,$FE
-        EQUB    $2C,$E5,$FE,$20,$9E,$06,$2C,$E6
-        EQUB    $FE,$50,$FB,$B0,$0D,$E0,$04,$D0
-        EQUB    $11,$20,$14,$04,$20,$95,$06,$4C
-        EQUB    $32,$00,$4A,$90,$05,$A0,$88,$8C
-        EQUB    $E0,$FE,$28,$60,$58,$B0,$0A,$D0
-        EQUB    $03,$4C,$9C,$05,$AE,$8D,$02,$F0
-        EQUB    $E0,$A9,$FF,$20,$06,$04,$90,$F9
-        EQUB    $20,$CE,$04,$08,$78,$A9,$07,$20
-        EQUB    $C7,$04,$A0,$00,$84,$00,$B1,$00
-        EQUB    $8D,$E5,$FE,$EA,$EA,$EA,$C8,$D0
-        EQUB    $F5,$28,$E6,$54,$D0,$06,$E6,$55
-        EQUB    $D0,$02,$E6,$56,$E6,$01,$24,$01
-        EQUB    $50,$D9,$20,$CE,$04,$A9,$04,$A0
-        EQUB    $00,$A2,$53,$4C,$06,$04,$A9,$80
-        EQUB    $85,$54,$85,$01,$A9,$20,$2D,$06
-        EQUB    $80,$A8,$84,$53,$F0,$19,$AE,$07
-        EQUB    $80,$E8,$BD,$00,$80,$D0,$FA,$BD
-        EQUB    $01,$80,$85,$53,$BD,$02,$80,$85
-        EQUB    $54,$BC,$03,$80,$BD,$04,$80,$85
-        EQUB    $56,$84,$55,$60
+        JMP     L0484
+
+        JMP     L06A7
+
+        CMP     #$80
+        BCC     LBF39
+
+        CMP     #$C0
+        BCS     LBF2C
+
+        ORA     #$40
+        CMP     L0015
+        BNE     LBF38
+
+        PHP
+        SEI
+        LDA     #$05
+        JSR     L069E
+
+        LDA     L0015
+        JSR     L069E
+
+        PLP
+        LDA     #$80
+        STA     L0015
+        STA     L0014
+        RTS
+
+.LBF2C
+        ASL     L0014
+        BCS     LBF36
+
+        CMP     L0015
+        BEQ     LBF38
+
+        CLC
+        RTS
+
+.LBF36
+        STA     L0015
+.LBF38
+        RTS
+
+.LBF39
+        PHP
+        SEI
+        STY     L0013
+        STX     L0012
+        JSR     L069E
+
+        TAX
+        LDY     #$03
+        LDA     L0015
+        JSR     L069E
+
+.LBF4A
+        LDA     (L0012),Y
+        JSR     L069E
+
+        DEY
+        BPL     LBF4A
+
+        LDY     #$18
+        STY     LFEE0
+        LDA     L0518,X
+        STA     LFEE0
+        LSR     A
+        LSR     A
+        BCC     LBF67
+
+        BIT     LFEE5
+        BIT     LFEE5
+.LBF67
+        JSR     L069E
+
+.LBF6A
+        BIT     LFEE6
+        BVC     LBF6A
+
+        BCS     LBF7E
+
+        CPX     #$04
+        BNE     LBF86
+
+.LBF75
+        JSR     L0414
+
+        JSR     L0695
+
+        JMP     L0032
+
+.LBF7E
+        LSR     A
+        BCC     LBF86
+
+        LDY     #$88
+        STY     LFEE0
+.LBF86
+        PLP
+        RTS
+
+        CLI
+        BCS     LBF95
+
+        BNE     LBF90
+
+        JMP     L059C
+
+.LBF90
+        LDX     L028D
+        BEQ     LBF75
+
+.LBF95
+        LDA     #$FF
+        JSR     L0406
+
+        BCC     LBF95
+
+        JSR     L04CE
+
+.LBF9F
+        PHP
+        SEI
+        LDA     #$07
+        JSR     L04C7
+
+        LDY     #$00
+        STY     L0000
+.LBFAA
+        LDA     (L0000),Y
+        STA     LFEE5
+        NOP
+        NOP
+        NOP
+        INY
+        BNE     LBFAA
+
+        PLP
+        INC     L0054
+        BNE     LBFC0
+
+        INC     L0055
+        BNE     LBFC0
+
+        INC     L0056
+.LBFC0
+        INC     L0001
+        BIT     L0001
+        BVC     LBF9F
+
+        JSR     L04CE
+
+        LDA     #$04
+        LDY     #$00
+        LDX     #$53
+        JMP     L0406
+
+        LDA     #$80
+        STA     L0054
+        STA     L0001
+        LDA     #$20
+        AND     L8006
+        TAY
+        STY     L0053
+        BEQ     LBFFB
+
+        LDX     L8007
+.LBFE5
+        INX
+        LDA     L8000,X
+        BNE     LBFE5
+
+        LDA     L8001,X
+        STA     L0053
+        LDA     L8002,X
+        STA     L0054
+        LDY     header_service_entry,X
+        LDA     L8004,X
+.LBFFB
+        STA     L0056
+        STY     L0055
+        RTS
 
 .BeebDisEndAddr
 SAVE "..\asm\anfs418.bin",BeebDisStartAddr,BeebDisEndAddr

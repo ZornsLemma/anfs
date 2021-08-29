@@ -31,7 +31,7 @@ byte $b194 4
 byte $bc91 3
 byte $bc94 256
 byte $bd94 206
-byte $bf04 252
+entry $bf04
 byte $8d38
 byte $8e59
 byte $8e8a 2
