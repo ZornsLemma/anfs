@@ -166,3 +166,5 @@ entry $868c
 
 wordentry $8e61 7
 
+; There's a split RTS-style jump table at L89CA and L89EF
+entry $8ea5

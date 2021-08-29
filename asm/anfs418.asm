@@ -2475,7 +2475,7 @@ L89A6 = L89A4+2
         JSR     L94AD
 
         LDX     L0F03
-        BEQ     L8E58
+        BEQ     serviceX1
 
         LDA     L0F05
         LDY     #$17
@@ -2484,7 +2484,7 @@ L89A6 = L89A4+2
         JSR     L9295
 
         CMP     #$08
-        BCS     L8E58
+        BCS     serviceX1
 
         TAX
         JSR     LAF32
@@ -2494,7 +2494,7 @@ L89A6 = L89A4+2
         BNE     L8E49
 
         CPX     #$05
-        BCS     L8E58
+        BCS     serviceX1
 
         LDY     #$0E
 .L8E49
@@ -2510,7 +2510,7 @@ L89A6 = L89A4+2
 L8E54 = L8E52+2
         PHA
         LDX     L00BB
-.L8E58
+.serviceX1
         RTS
 
         EQUB    $50
@@ -2556,6 +2556,7 @@ L8E54 = L8E52+2
         LDY     #$21
         JMP     L8E49
 
+.serviceX2
         CPY     #$16
         BCS     L8EAB
 
