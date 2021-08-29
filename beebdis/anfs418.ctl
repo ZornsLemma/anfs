@@ -161,3 +161,5 @@ string $8ca2 21
 
 byte $8488 6
 entry pc
+
+entry $868c

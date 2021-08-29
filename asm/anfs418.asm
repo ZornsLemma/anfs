@@ -102,6 +102,7 @@ L0D0E   = $0D0E
 L0D11   = $0D11
 L0D14   = $0D14
 L0D1A   = $0D1A
+L0D1E   = $0D1E
 L0D20   = $0D20
 L0D21   = $0D21
 L0D22   = $0D22
@@ -1241,11 +1242,31 @@ L8600 = L85FF+1
         EQUB    $8C
 
         EQUB    $90,$D2,$D2,$D2,$E2,$E2,$88,$A9
-        EQUB    $03,$D0,$48,$A9,$03,$D0,$02,$A9
-        EQUB    $02,$8D,$40,$0D,$18,$08,$A0,$0C
-        EQUB    $B9,$1E,$0D,$28,$71,$A0,$99,$1E
-        EQUB    $0D,$C8,$08,$C0,$10,$90,$F1,$28
-        EQUB    $D0,$2C
+        EQUB    $03,$D0
+
+.L868C
+        PHA
+        LDA     #$03
+        BNE     L8693
+
+        LDA     #$02
+.L8693
+        STA     L0D40
+        CLC
+        PHP
+        LDY     #$0C
+.L869A
+        LDA     L0D1E,Y
+        PLP
+        ADC     (L00A0),Y
+        STA     L0D1E,Y
+        INY
+        PHP
+        CPY     #$10
+        BCC     L869A
+
+        PLP
+        BNE     L86D8
 
 .L86AC
         LDA     L0D20
@@ -1272,6 +1293,7 @@ L8600 = L85FF+1
         STA     L0D3E
         LDA     #$02
         STA     L0D40
+.L86D8
         LDA     L00A0
         STA     L00A6
         LDA     L00A1
