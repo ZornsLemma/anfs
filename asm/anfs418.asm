@@ -2484,13 +2484,17 @@ L8E54 = L8E52+2
         EQUB    $52,$49,$4E,$54,$20,$01,$00
 
 .L8E61
-        EQUB    $1B
+        EQUW    $FF1B
+        EQUW    $FF1E
+        EQUW    $FF21
+        EQUW    $FF24
+        EQUW    $FF27
+        EQUW    $FF2A
+        EQUW    $FF2D
 
-        EQUB    $FF,$1E,$FF,$21,$FF,$24,$FF,$27
-        EQUB    $FF,$2A,$FF,$2D,$FF,$35,$99,$4A
-        EQUB    $BE,$9B,$44,$CE,$B7,$57,$4D,$B8
-        EQUB    $42,$2F,$9E,$41,$4E,$9D,$52,$33
-        EQUB    $8E
+        EQUB    $35,$99,$4A,$BE,$9B,$44,$CE,$B7
+        EQUB    $57,$4D,$B8,$42,$2F,$9E,$41,$4E
+        EQUB    $9D,$52,$33,$8E
 
 .L8E83
         LDX     #$00

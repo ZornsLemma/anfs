@@ -19,7 +19,6 @@ byte $89ca
 byte $89ef
 byte $8c98
 entry $8c9f
-byte $8e61
 byte $948b
 byte $9491
 byte $a3f0
@@ -163,3 +162,6 @@ byte $8488 6
 entry pc
 
 entry $868c
+
+wordentry $8e61 7
+
