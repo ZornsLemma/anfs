@@ -29,8 +29,9 @@ byte $ac8c
 byte $b194 4
 ;byte $b1b9 3
 byte $bc91 3
-byte $bc94 256
-byte $bd94 206
+byte $bc94 31
+entry pc
+;byte $bd94 206
 entry $bf04
 byte $8d38
 byte $8e59
