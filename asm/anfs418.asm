@@ -252,24 +252,29 @@ LFFDA   = $FFDA
 LFFDD   = $FFDD
 LFFE0   = $FFE0
 LFFE3   = $FFE3
-LFFE7   = $FFE7
-LFFEE   = $FFEE
+osnewl  = $FFE7
+oswrch  = $FFEE
 LFFF1   = $FFF1
-LFFF4   = $FFF4
+osbyte  = $FFF4
 LFFF7   = $FFF7
 
         org     $8000
+.L8000
         EQUS    $00,"BC"
 
-.L8003
+.header_service_entry
         JMP     L8A15
 
+.L8006
         EQUB    $82
 
+.L8007
         EQUB    $19
 
+.L8008
         EQUB    $04
 
+.L8009
         EQUS    "Acorn ANFS 4.18",$00
 
         EQUS    $00
@@ -1802,7 +1807,7 @@ L89A6 = L89A4+2
         PHA
         LDA     #$00
         LDX     #$01
-        JSR     LFFF4
+        JSR     osbyte
 
         CPX     #$01
         BEQ     L8A38
@@ -1944,7 +1949,7 @@ L89A6 = L89A4+2
         STA     (L009C),Y
         TAY
         LDA     #$C9
-        JSR     LFFF4
+        JSR     osbyte
 
         LDA     #$0A
         JSR     LA9BE
@@ -1955,7 +1960,7 @@ L89A6 = L89A4+2
 .L8AEE
         LDX     L009E
         LDY     #$7F
-        JSR     LFFF4
+        JSR     osbyte
 
         ADC     #$01
         CMP     #$D0
@@ -2080,7 +2085,7 @@ L89A6 = L89A4+2
         BVC     L8BAB
 
 .L8BA8
-        JSR     LFFE7
+        JSR     osnewl
 
 .L8BAB
         TYA
@@ -2186,7 +2191,7 @@ L89A6 = L89A4+2
         PLA
         TAX
 .L8C26
-        JSR     LFFE7
+        JSR     osnewl
 
         INX
         INX
@@ -2208,7 +2213,7 @@ L89A6 = L89A4+2
 
         TYA
         PHA
-        JSR     LFFE7
+        JSR     osnewl
 
         LDY     #$0B
         LDA     #$20
@@ -2304,7 +2309,7 @@ L89A6 = L89A4+2
         RTS
 
         LDA     #$7A
-        JSR     LFFF4
+        JSR     osbyte
 
         TXA
         BMI     L8CE0
@@ -2318,14 +2323,14 @@ L89A6 = L89A4+2
 .L8CDA
         TAY
         LDA     #$78
-        JSR     LFFF4
+        JSR     osbyte
 
 .L8CE0
         JSR     L8B1A
 
         JSR     L8FF1
 
-        JSR     LFFE7
+        JSR     osnewl
 
         LDX     L00A8
         BNE     L8CC9
@@ -2351,7 +2356,7 @@ L89A6 = L89A4+2
         LDX     #$0F
 .L8D0A
         LDA     #$8F
-        JMP     LFFF4
+        JMP     osbyte
 
         EQUS    "i .boot"
 
@@ -2492,7 +2497,7 @@ L8E54 = L8E52+2
 .L8E85
         LDY     #$FF
 .L8E87
-        JMP     LFFF4
+        JMP     osbyte
 
         EQUB    $7A,$A9
 
@@ -2549,7 +2554,7 @@ L8E54 = L8E52+2
         LDA     #$8F
         LDX     #$01
         LDY     #$0E
-        JSR     LFFF4
+        JSR     osbyte
 
         JSR     L8EAC
 
@@ -2684,7 +2689,7 @@ L8F48 = L8F46+2
         JSR     LB799
 
         LDA     #$77
-        JSR     LFFF4
+        JSR     osbyte
 
         JSR     L8F8C
 
@@ -2762,7 +2767,7 @@ L8F48 = L8F46+2
 .L901D
         NOP
 .L901E
-        JSR     LFFE7
+        JSR     osnewl
 
         RTS
 
@@ -3442,7 +3447,7 @@ L8F48 = L8F46+2
         JSR     LB799
 
         LDA     #$77
-        JSR     LFFF4
+        JSR     osbyte
 
         JSR     LB559
 
@@ -3597,7 +3602,7 @@ L8F48 = L8F46+2
 
 .L9576
         LDA     #$7E
-        JSR     LFFF4
+        JSR     osbyte
 
         LDA     #$06
         JMP     L964E
@@ -3630,7 +3635,7 @@ L8F48 = L8F46+2
         LDX     #$01
         LDY     #$00
         LDA     #$C9
-        JSR     LFFF4
+        JSR     osbyte
 
         JSR     LACDD
 
@@ -3657,7 +3662,7 @@ L8F48 = L8F46+2
         JSR     LACDD
 
         LDA     #$99
-        JMP     LFFF4
+        JMP     osbyte
 
 .L95DD
         LDA     L0D6E
@@ -4428,7 +4433,7 @@ L96B4 = L96B3+1
 
         JSR     L9A57
 
-        JSR     LFFE7
+        JSR     osnewl
 
         JMP     L9CC7
 
@@ -5038,7 +5043,7 @@ L96B4 = L96B3+1
         LDA     L00BB
         PHA
         LDA     #$77
-        JSR     LFFF4
+        JSR     osbyte
 
         PLA
         STA     L00BB
@@ -5564,7 +5569,7 @@ L96B4 = L96B3+1
         BIT     L9491
         JSR     LB198
 
-        JMP     LFFE7
+        JMP     osnewl
 
 .LA0A7
         TXA
@@ -6104,7 +6109,7 @@ L96B4 = L96B3+1
 
         LDA     #$79
         LDX     #$81
-        JSR     LFFF4
+        JSR     osbyte
 
         TXA
         BPL     LA3E3
@@ -6323,7 +6328,7 @@ L96B4 = L96B3+1
         TXA
         PHA
         LDA     #$13
-        JSR     LFFF4
+        JSR     osbyte
 
         PLA
         TAX
@@ -6704,7 +6709,7 @@ L96B4 = L96B3+1
 .LAAFC
         LDA     #$91
         LDX     #$03
-        JSR     LFFF4
+        JSR     osbyte
 
         BCS     LAAEC
 
@@ -7003,7 +7008,7 @@ L96B4 = L96B3+1
         INC     L009E
         LDA     LAD0D,Y
         LDY     #$FF
-        JSR     LFFF4
+        JSR     osbyte
 
         TXA
         LDX     #$00
@@ -7786,14 +7791,14 @@ L96B4 = L96B3+1
 
         LDA     #$0F
         LDX     #$01
-        JSR     LFFF4
+        JSR     osbyte
 
         LDA     #$7A
-        JSR     LFFF4
+        JSR     osbyte
 
         LDY     #$00
         LDA     #$78
-        JMP     LFFF4
+        JMP     osbyte
 
 .LB39C
         LDA     L0F2F
@@ -7837,7 +7842,7 @@ L96B4 = L96B3+1
         BNE     LB3ED
 
         LDA     #$0D
-        JSR     LFFEE
+        JSR     oswrch
 
         LDX     #$02
 .LB3D9
@@ -7889,7 +7894,7 @@ L96B4 = L96B3+1
 
         DEC     L00B5
 .LB41D
-        JSR     LFFE7
+        JSR     osnewl
 
         JMP     LB3A3
 
@@ -7911,7 +7916,7 @@ L96B4 = L96B3+1
         AND     #$20
         LDA     #$0F
         LDX     #$01
-        JSR     LFFF4
+        JSR     osbyte
 
         JSR     LFFE0
 
@@ -8803,7 +8808,7 @@ LB865 = LB863+2
         PLP
         JSR     LBC3D
 
-        JMP     LFFE7
+        JMP     osnewl
 
 .LB9B6
         JSR     LB9FF
@@ -8821,7 +8826,7 @@ LB865 = LB863+2
 .LB9C5
         STA     L00AD
 .LB9C7
-        JSR     LFFEE
+        JSR     oswrch
 
         JMP     LB9AA
 
@@ -8846,7 +8851,7 @@ LB865 = LB863+2
         PLA
         STA     L00AD
 .LB9E7
-        JSR     LFFE7
+        JSR     osnewl
 
         JMP     LB9AA
 
@@ -8876,10 +8881,10 @@ LB865 = LB863+2
 .LBA04
         JSR     LBC3D
 
-        JSR     LFFE7
+        JSR     osnewl
 
         LDA     #$7E
-        JSR     LFFF4
+        JSR     osbyte
 
         LDA     #$11
         JSR     L96D4
@@ -9031,7 +9036,7 @@ LB865 = LB863+2
         BPL     LBAB6
 
 .LBACF
-        JSR     LFFE7
+        JSR     osnewl
 
         PLP
         BCS     LBAD8
@@ -9057,9 +9062,9 @@ LB865 = LB863+2
         DEX
         BPL     LBAF2
 
-        JSR     LFFE7
+        JSR     osnewl
 
-        JMP     LFFE7
+        JMP     osnewl
 
 .LBB03
         PHA
@@ -9442,7 +9447,7 @@ LB865 = LB863+2
 
         LDX     #$06
         LDA     #$14
-        JSR     LFFF4
+        JSR     osbyte
 
 .LBE73
         BIT     LFEE0
@@ -9451,7 +9456,7 @@ LB865 = LB863+2
         LDA     LFEE1
         BEQ     LBEC0
 
-        JSR     LFFEE
+        JSR     oswrch
 
         JMP     LBE73
 
@@ -9520,7 +9525,7 @@ LB865 = LB863+2
 
 .LBEE8
         LDA     LFEE1
-        JSR     LFFEE
+        JSR     oswrch
 
 .LBEEE
         BIT     LFEE2
